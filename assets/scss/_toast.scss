@@ -1,0 +1,26 @@
+.toastfy {
+    position: fixed;
+    top: -200px;
+    gap: 27px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 0.5px solid rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.24), 0px 12px 24px 0px rgba(0, 0, 0, 0.20);
+    transition: all .2s linear;
+    background: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: fit-content;
+    &.show {
+        top: 133px;
+        z-index: 1233;
+    }
+    .toast_exit{
+        cursor: pointer;
+        font-size: 24px;
+    }
+}

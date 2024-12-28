@@ -103,12 +103,19 @@
 // }
 document.addEventListener('DOMContentLoaded', function() {
   const modal = document.querySelector('#new_orders');
+  const modal_products = document.querySelector('#modal_products');
+  const modal_open_products = document.querySelector('.open_lists')
   const openBtn = document.querySelector('.new_order');
   const closeBtn = document.querySelector('.close_modal');
-
+const close_products = document.querySelector('.close_product_modal')
   // Modalni ochish
   openBtn.addEventListener('click', function(e) {
     modal.classList.add('show');
+    e.preventDefault()
+  });
+  modal_open_products.addEventListener('click', function(e) {
+    modal_products.classList.add('show');
+    modal.classList.remove('show');
     e.preventDefault()
   });
 
@@ -116,11 +123,26 @@ document.addEventListener('DOMContentLoaded', function() {
   closeBtn.addEventListener('click', function() {
     modal.classList.remove('show');
   });
-
+  // products modal
+  close_products.addEventListener('click', function() {
+    modal_products.classList.remove('show');
+  });
   // Modalning orqa foniga bosganda yopish
   modal.addEventListener('click', function(event) {
     if (event.target === modal) {
       modal.classList.remove('show');
     }
   });
+  modal_products.addEventListener('click', function(event) {
+    if (event.target === modal_products) {
+      modal_products.classList.remove('show');
+    }
+  });
 });
+let toast = document.querySelector('.toastfy')
+document.querySelector('.toast_exit').onclick =  function(){
+  toast.classList.remove('show')
+}
+setTimeout(() => {
+  toast.classList.remove('show')
+}, 4000);

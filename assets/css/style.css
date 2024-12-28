@@ -305,6 +305,73 @@
 .modal.show {
   left: 0;
 }
+.modal#modal_products .modal_content {
+  min-width: 554px;
+}
+.modal#modal_products .modal_content .modal_header {
+  padding: 12px 16px;
+}
+.modal#modal_products .modal_content .modal_header h2 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+.modal#modal_products .modal_content .modal_header h2 a {
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 4px 6px;
+  background-color: #1D4ED8;
+  color: #fff;
+}
+.modal#modal_products .modal_content .modal_header h2 a span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+}
+.modal#modal_products .modal_content .modal_body {
+  padding: 0;
+}
+.modal#modal_products .modal_content .modal_body .modal_body_top {
+  padding: 16px;
+  gap: 16px;
+}
+.modal#modal_products .modal_content .modal_body .modal_body_top .modal_imtes {
+  gap: 16px;
+}
+.modal#modal_products .modal_content .modal_body .modal_body_top .modal_imtes .input_title {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.modal#modal_products .modal_content .modal_body .modal_body_top .modal_imtes select,
+.modal#modal_products .modal_content .modal_body .modal_body_top .modal_imtes input {
+  border-radius: 6px;
+  min-height: 35px;
+  width: 100%;
+  padding: 4px 12px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Inter";
+  color: rgba(0, 0, 0, 0.5);
+}
+.modal#modal_products .modal_content .modal_body .modal_body_top .modal_imtes .modal_input:first-child {
+  width: 120%;
+}
+.modal#modal_products .modal_content .modal_body .modal_body_top .modal_imtes .modal_input {
+  gap: 4px;
+}
+.modal#modal_products .modal_content .modal_body .modal_body_top .modal_btn {
+  gap: 16px;
+}
+.modal#modal_products .modal_content .modal_body .modal_body_bottom {
+  padding: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  gap: 16px;
+  opacity: 0.5;
+}
 .modal .modal_content {
   width: 520px;
   background: #FFF;
@@ -325,6 +392,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
+  gap: 16px;
 }
 .modal .modal_content .modal_header span {
   cursor: pointer;
@@ -480,7 +548,7 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   gap: 10px;
 }
-.modal .modal_content .modal_footer button {
+.modal .modal_content button {
   cursor: pointer;
   padding: 8px 10px;
   outline: none;
@@ -490,10 +558,37 @@
   border: 0;
   color: #fff;
 }
-.modal .modal_content .modal_footer button[type=reset] {
+.modal .modal_content button[type=reset] {
   background: #fff;
   color: #000;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.toastfy {
+  position: fixed;
+  top: -200px;
+  gap: 27px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.24), 0px 12px 24px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s linear;
+  background: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+}
+.toastfy.show {
+  top: 133px;
+  z-index: 1233;
+}
+.toastfy .toast_exit {
+  cursor: pointer;
+  font-size: 24px;
 }
 
 body {

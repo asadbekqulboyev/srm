@@ -12,6 +12,88 @@
         left: 0;
     }
 
+    &#modal_products {
+        .modal_content {
+            min-width: 554px;
+
+            .modal_header {
+                padding: 12px 16px;
+
+                h2 {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+
+                    a {
+
+
+
+                        border-radius: 4px;
+                        text-decoration: none;
+                        padding: 4px 6px;
+                        background-color: #1D4ED8;
+                        color: #fff;
+
+                        span {
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .modal_body {
+                padding: 0;
+
+                .modal_body_top {
+                    padding: 16px;
+                    gap: 16px;
+
+                    .modal_imtes {
+                        gap: 16px;
+                        .input_title {
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 600;
+                        }
+                        select,
+                        input {
+                            border-radius: 6px;
+                            min-height: 35px;
+                            width: 100%;
+                            padding: 4px 12px;
+                            outline: none;
+                            border: 1px solid rgba(0, 0, 0, 0.10);
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-family: 'Inter';
+                            color: rgba(0, 0, 0, 0.50);
+                        }
+                        .modal_input:first-child{
+                            width: 120%;
+                        }
+                        .modal_input{
+                            gap: 4px;
+                        }
+                    }
+                    .modal_btn{
+                        gap: 16px;
+                    }
+                }
+                .modal_body_bottom {
+                    padding: 16px;
+                    border-top: 1px solid rgba(0, 0, 0, 0.10);
+                    gap: 16px;
+                    opacity: .5;
+                }
+            }
+        }
+
+
+    }
+
     .modal_content {
         width: 520px;
         background: #FFF;
@@ -33,6 +115,8 @@
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 600;
+                gap: 16px;
+
             }
 
             span {
@@ -215,22 +299,23 @@
             border-top: 1px solid rgba(0, 0, 0, 0.10);
             gap: 10px;
 
-            button {
-                cursor: pointer;
-                padding: 8px 10px;
-                outline: none;
-                border-radius: 6px;
-                background: #3B82F6;
-                width: 100%;
-                border: 0;
-                color: #fff;
-            }
+           
+        }
+        button {
+            cursor: pointer;
+            padding: 8px 10px;
+            outline: none;
+            border-radius: 6px;
+            background: #3B82F6;
+            width: 100%;
+            border: 0;
+            color: #fff;
+        }
 
-            button[type=reset] {
-                background: #fff;
-                color: #000;
-                border: 1px solid rgba(0, 0, 0, 0.10);
-            }
+        button[type=reset] {
+            background: #fff;
+            color: #000;
+            border: 1px solid rgba(0, 0, 0, 0.10);
         }
     }
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="login">
+  <div class="background">
+    <div class="login-container">
+      <h1 class="flex center a_center"><img src="./assets/images/logo.svg" alt=""><span>CRM завод</span></h1>
+      <h2>Авторизация</h2>
+      <form id="login-form" action="index.html">
+        <div class="input-group">
+          <label for="username">Логин</label>
+          <input type="text" id="username" placeholder="Лавров Мстислав Гоголевич">
+          <span class="error-message" id="username-error">Ошибка в логине, попробуйте проверить данные</span>
+        </div>
+        <div class="input-group">
+          <label for="password">Пароль</label>
+          <input type="password" id="password">
+          <span class="error-message" id="password-error">Ошибка в пароле, попробуйте проверить данные</span>
+        </div>
+        <button type="submit">Войти</button>
+        <p class="error-notice">К сожалению такой пользователь не найден</p>
+      </form>
+    </div>
+  </div>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

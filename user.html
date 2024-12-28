@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.svg" />
+    <title>CRM завод</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="wrpper">
+        <div class="sidebar">
+            <div class="top">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.svg" alt="">
+                    <div class="word">CRM завод</div>
+                </a>
+                <a href="#" class="profil">
+                    <img src="assets/images/user_logo.png" alt="">
+                    <div class="right">
+                        <div class="texts">
+                            <div class="name">
+                                Владислав Мохеев
+                            </div>
+                            <div class="constructor">
+                                Главный конструктор
+                            </div>
+                        </div>
+                        <div class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" viewBox="0 0 12 24" fill="none">
+                                <path d="M11.5306 10.5307L6.53063 15.5307C6.46095 15.6007 6.37816 15.6561 6.28699 15.694C6.19583 15.7318 6.09809 15.7513 5.99938 15.7513C5.90067 15.7513 5.80293 15.7318 5.71176 15.694C5.6206 15.6561 5.53781 15.6007 5.46813 15.5307L0.468128 10.5307C0.327232 10.3898 0.248077 10.1987 0.248077 9.99948C0.248077 9.80023 0.327232 9.60913 0.468128 9.46823C0.609025 9.32734 0.800121 9.24818 0.999378 9.24818C1.19864 9.24818 1.38973 9.32734 1.53063 9.46823L6 13.9376L10.4694 9.46761C10.6103 9.32671 10.8014 9.24756 11.0006 9.24756C11.1999 9.24756 11.391 9.32671 11.5319 9.46761C11.6728 9.60851 11.7519 9.7996 11.7519 9.99886C11.7519 10.1981 11.6728 10.3892 11.5319 10.5301L11.5306 10.5307Z" fill="black" fill-opacity="0.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <div class="menu">
+                    <a href="#" class="item active">
+                        <div class="icon">
+                            <img src="./assets/images/sidebar_icon.svg" alt="">
+                        </div>
+                        <div class="text">Проекты</div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="icon">
+                            <img src="assets/images/sidebar_icon2.svg" alt="">
+                        </div>
+                        <div class="text">Пользователи</div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="icon">
+                          <img src="./assets/images/sidebar_icon3.svg" alt="">
+                        </div>
+                        <div class="text">Цеха</div>
+                    </a>
+                </div>
+            </div>
+            <div class="bottom">
+                <a href="#" class="item flex a_center">
+                   <img src="./assets/images/sidebar_icon4.svg" alt="">
+                    <div class="text">Настройки</div>
+                </a>
+            </div>
+        </div>
+       <main>
+    <div class="table_container">
+        <table>
+            <!-- Table Header -->
+            <thead>
+                <td><input type="checkbox"></th>
+                <td>Логин <img src="assets/images/filter.svg" alt="Filter" class="filter_icon"></th>
+                <td>ФИО <img src="assets/images/filter.svg" alt="Filter" class="filter_icon"></th>
+                <td>Участок <img src="assets/images/filter.svg" alt="Filter" class="filter_icon"></th>
+                <td>Действия</th>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody>
+                <!-- Row 1 -->
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>СизыхЛС</td>
+                    <td>
+                        <span class="name">Сизых Лёша Смелых</span><br>
+                        <span class="position">Руководитель организации</span>
+                    </td>
+                    <td>Станок №1</td>
+                    <td class="actions">
+                        <img src="assets/images/trash.svg" alt="Delete" class="action_icon">
+                        <img src="assets/images/pen_icon.svg" alt="Edit" class="action_icon">
+                    </td>
+                </tr>
+                <!-- Row 2 -->
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>УмберБГ</td>
+                    <td>
+                        <span class="name">Умбер Борис Годунов</span><br>
+                        <span class="position">Руководитель организации</span>
+                    </td>
+                    <td>Станок №3</td>
+                    <td class="actions">
+                        <img src="assets/images/trash.svg" alt="Delete" class="action_icon">
+                        <img src="assets/images/pen_icon.svg" alt="Edit" class="action_icon">
+                    </td>
+                </tr>
+                <!-- Row 3 -->
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>СергееваНТ</td>
+                    <td>
+                        <span class="name">Сергеева Наталья Тутова</span><br>
+                        <span class="position">Руководитель организации</span>
+                    </td>
+                    <td>Станок №5</td>
+                    <td class="actions">
+                        <img src="assets/images/trash.svg" alt="Delete" class="action_icon">
+                        <img src="assets/images/pen_icon.svg" alt="Edit" class="action_icon">
+                    </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+        <!-- Footer
+        <div class="table_footer">
+            <div class="footer_left">100 объектов на странице</div>
+            <div class="footer_center">1-100 из 2,448 объектов</div>
+            <div class="footer_right">
+                <button class="pagination_button">←</button>
+                <button class="pagination_button">→</button>
+            </div>
+        </div> -->
+    </div>
+       </main>   
+    </div>
+   
+</body>
+</html>

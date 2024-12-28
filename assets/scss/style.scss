@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+// components
+@import 'sidebar';
+@import 'projects';
+@import 'modal';
+
+body{
+    font-family: 'Inter';
+    color: rgba(0, 0, 0, 0.80);
+}
+// flex
+.main{
+    padding-left: 256px;
+    padding-right: 24px;
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+}
+.flex {
+    display: flex;
+
+    &.start {
+        justify-content: flex-start;
+    }
+
+    &.center {
+        justify-content: center;
+    }
+
+    &.between {
+        justify-content: space-between;
+    }
+
+    &.end {
+        justify-content: flex-end;
+    }
+
+    &.a_start {
+        align-items: flex-start;
+    }
+
+    &.a_center {
+        align-items: center;
+    }
+
+    &.a_end {
+        align-items: flex-end;
+    }
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.row {
+        flex-direction: row;
+    }
+
+    &.wrap {
+        flex-wrap: wrap;
+    }
+}
+table tr{
+    &:hover{
+        background: rgba(0, 0, 0, 0.05);
+    }
+    input[type=checkbox]{
+        cursor: pointer;
+    }
+}

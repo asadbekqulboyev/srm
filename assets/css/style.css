@@ -1059,8 +1059,11 @@ body {
   flex-wrap: wrap;
 }
 
+table tr {
+  transition: all 0.2s linear;
+}
 table tr:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: #DBEAFE;
 }
 table tr input[type=checkbox] {
   cursor: pointer;

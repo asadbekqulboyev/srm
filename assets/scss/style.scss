@@ -69,8 +69,9 @@ body{
     }
 }
 table tr{
+    transition: all .2s linear;
     &:hover{
-        background: rgba(0, 0, 0, 0.05);
+        background: #DBEAFE;
     }
     input[type=checkbox]{
         cursor: pointer;

@@ -86,14 +86,27 @@
                         <span class="red"></span>
                         <div class="text">Отмененные</div>
                     </a>
-
                 </div>
                 <div class="actions flex between">
                     <form action="">
                         <input type="text" placeholder="Поиск" class="search">
                     </form>
-                    <a href="#" class="new_order"><img src="./assets/images/plus.svg" alt="">Создать новый проект
-                    </a>
+                    <div class="flex a_center btn_group">
+                        <a href="" class="filter flex a_center">
+                            <img src="assets/images/filters.svg" alt="">
+                            <span>Фильтр</span>
+                        </a>
+                        <a href="#" class="new_order"><img src="./assets/images/plus.svg" alt="">Создать новый проект
+                        </a>
+                    </div>
+                </div>
+                <div class="filter_items">
+                    <ul class="flex a_center "> 
+                        <li><a href="" id="delete_item"><img src="assets/images/trash_icon.svg" alt=""><span>Удалить выбранные</span></a></li>
+                        <li><a href="" id="status_open"><img src="assets/images/status_icon.svg" alt=""><span>Изменить статус</span></a></li>
+                        <li><a href=""><img src="assets/images/xlsx.svg" alt=""><span>Выгрузить отчет</span></a></li>
+                        <li><a href="">Отменить выбор</a></li>
+                    </ul>
                 </div>
                 <table>
                     <thead>
@@ -637,7 +650,7 @@
         <form class="modal_content">
             <div class="modal_header flex a_center between">
                 <h2>Новый пользователь</h2>
-                <span class="close_modal">&times;</span>
+                <span class="close_modal modal_exit">&times;</span>
             </div>
             <div class="modal_body flex column">
                 <!-- items 1 -->
@@ -856,7 +869,7 @@
         <form class="modal_content">
             <div class="modal_header flex a_center between">
                 <h2 class="flex a_center"><span>Редактор изделий</span> <a href="" class="flex a_center"><img src="./assets/images/plus.svg" alt=""> <span>Добавить изделие</span></a></h2>
-                <span class="close_product_modal">&times;</span>
+                <span class="close_product_modal modal_exit">&times;</span>
             </div>
             <div class="modal_body flex column">
                 <!-- items 1 -->
@@ -971,6 +984,86 @@
                  </div>
             </div>
             
+        </form>
+    </div>
+    <!-- delete -->
+    <div class="modal " id="delete_modal">
+        <form class="modal_content">
+            <div class="modal_header flex a_end end">
+                <span  class="exit_edit modal_exit">&times;</span>
+            </div>
+            <div class="modal_body flex column a_center">
+                <img src="./assets/images/delete_x.svg" alt="">
+                <div class="delete_text flex column a_center">
+                    <div class="delete_title">Подтвердите удаление выбранных элементов 3</div>
+                    <div class="delete_subtitle">Если вы удалите выбранные элементы, вернуть их будет невозможно</div>
+                </div>
+            </div>
+            <div class="modal_footer flex a_center a_center ">
+                <button type="reset">Отменить</button>
+                <button type="submit">Удалить</button>
+            </div>
+        </form>
+    </div>
+    <!-- status_modal -->
+    <div class="modal" id="status">
+        <form class="modal_content">
+            <div class="modal_header flex a_center between">
+                <div class="modal_title">
+                    <h2>Выбрать статус<span class="edit_title_sm">3 объекта</span></h2>
+                </div>
+                <div class="modal_btns_gorup flex a_center">
+                    <a href="" class="flex a_center center  trash_modal">
+                        <img src="./assets/images/trash_icon.svg" class="" alt="">
+                    </a>
+                    <span  class="exit_edit modal_exit">&times;</span>
+                </div>
+            </div>
+            <div class="modal_body flex column a_center">
+                <div class="status_options">
+                    <label class="status_option">
+                      <input type="radio" name="status" value="new" />
+                      
+                      <span class="status_circle new"></span>
+                      <span class="status_text">
+                        Отметить "как новые"
+                        <small>Если выбрать данный статус - заказы будут отмечены как новый, возможно этапы которые прошёл заказ буду сброшены</small>
+                      </span>
+                    </label>
+                  
+                    <label class="status_option">
+                      <input type="radio" name="status" value="in_work" />
+                      <span class="status_circle in_work"></span>
+                      <span class="status_text">
+                        Отметить как "в работе"
+                        <small>Статус заказа изменится на "в работе".</small>
+                      </span>
+                    </label>
+                  
+                    <label class="status_option">
+                      <input type="radio" name="status" value="paused" />
+                      <span class="status_circle paused"></span>
+                      <span class="status_text">
+                        Отметить как "приостановлено"
+                        <small>Если выбрать данный статус, то выбранные заказы будут приостановлены</small>
+                      </span>
+                    </label>
+                  
+                    <label class="status_option">
+                      <input type="radio" name="status" value="archived" />
+                      <span class="status_circle archived"></span>
+                      <span class="status_text">
+                        Отправить в архив
+                        <small>Выбранные заказы будут отправлены в архив, вернуть заказ из архива невозможно, история этапов заказов будут сохранены</small>
+                      </span>
+                    </label>
+                  </div>
+                  
+            </div>
+            <div class="modal_footer flex a_center a_center ">
+                <button type="reset">Отменить</button>
+                <button type="submit">Удалить</button>
+            </div>
         </form>
     </div>
     <div class="toastfy flex a_center ">

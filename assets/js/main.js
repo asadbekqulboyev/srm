@@ -17,7 +17,7 @@
 //   if (!username) {
 //     usernameError.style.display = 'block';
 //     document.getElementById('username').style.borderColor='red'
-       
+
 //     hasError = true;
 //   } else {
 //     document.getElementById('username').style.borderColor='rgba(0, 0, 0, 0.05)'
@@ -59,7 +59,7 @@
 // // document.getElementById('show-toast').addEventListener('click', function() {
 // //     const toast = document.getElementById('toast-container');
 // //     document.querySelector('.toast-container').classList.add('show')
-    
+
 // //     setTimeout(function() {
 // //         document.querySelector('.toast-container').classList.remove('show')
 // //     }, 4000);
@@ -101,48 +101,118 @@
 //       closeModal();
 //     });
 // }
-document.addEventListener('DOMContentLoaded', function() {
+
+document.querySelector('.filter').onclick = function(e){
+e.preventDefault()
+document.querySelector('.filter_items').classList.add('active')
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const modalAll =  document.querySelectorAll('.modal')
   const modal = document.querySelector('#new_orders');
   const modal_products = document.querySelector('#modal_products');
   const modal_open_products = document.querySelector('.open_lists')
   const openBtn = document.querySelector('.new_order');
-  const closeBtn = document.querySelector('.close_modal');
-const close_products = document.querySelector('.close_product_modal')
-  // Modalni ochish
-  openBtn.addEventListener('click', function(e) {
-    modal.classList.add('show');
-    e.preventDefault()
-  });
-  modal_open_products.addEventListener('click', function(e) {
-    modal_products.classList.add('show');
-    modal.classList.remove('show');
-    e.preventDefault()
-  });
-
-  // Modalni yopish
-  closeBtn.addEventListener('click', function() {
-    modal.classList.remove('show');
-  });
-  // products modal
-  close_products.addEventListener('click', function() {
-    modal_products.classList.remove('show');
-  });
-  // Modalning orqa foniga bosganda yopish
-  modal.addEventListener('click', function(event) {
-    if (event.target === modal) {
+  // new order modal show
+  if(openBtn){
+    openBtn.addEventListener('click', function (e) {
+      modal.classList.add('show');
+      e.preventDefault()
+    });
+  }
+  // order modal next action
+  if(modal_open_products){
+    modal_open_products.addEventListener('click', function (e) {
+      modal_products.classList.add('show');
       modal.classList.remove('show');
+      e.preventDefault()
+    });
+  }  
+  // toastfy
+  let toast = document.querySelector('.toastfy')
+  document.querySelector('.toast_exit').onclick = function () {
+    toast.classList.remove('show')
+  }
+  setTimeout(() => {
+    toast.classList.remove('show')
+  }, 4000);
+  // edit modal
+  const edit_btn = document.querySelectorAll('.btn_grup_table .icon:nth-child(2)')
+  const delete_btn = document.querySelectorAll('.btn_grup_table .icon:nth-child(1)')
+  const update_btn = document.querySelector('#modal_open_update')
+  const edit_modal  = document.querySelector('#edit_modal')
+  const edit_modal2  = document.querySelector('#edit_modal2')
+  const delete_modal  = document.querySelector('#delete_modal')
+  const delete_item = document.querySelector('#delete_item')
+  const status_btn = document.querySelector('#status_open')
+  const status_modal = document.querySelector('#status')
+  if(edit_btn){
+    edit_btn.forEach(icon_edit => {
+      icon_edit.onclick = function(){
+        edit_modal.classList.add('show')
+      }
+    });
+  }
+  if(delete_item){
+    delete_item.onclick = function (e) {
+      e.preventDefault()
+      delete_modal.classList.add('show')
+      }
+  }
+  if(delete_btn){
+    delete_btn.forEach(icon_edit => {
+      icon_edit.onclick = function(){
+        delete_modal.classList.add('show')
+      }
+    });
+  }
+  if(update_btn){
+    update_btn.onclick= function (e) {
+      e.preventDefault()
+      edit_modal2.classList.add('show')
+      }
+  }
+  if(status_btn){
+    status_btn.onclick= function(e){
+      e.preventDefault()
+      status_modal.classList.add('show')
     }
-  });
-  modal_products.addEventListener('click', function(event) {
-    if (event.target === modal_products) {
-      modal_products.classList.remove('show');
-    }
+  }
+  // all modal close
+  function closeModal(modal) {
+    modal.classList.remove('show'); 
+  }
+  // all moda x close
+document.querySelectorAll('.modal_exit').forEach((exitButton) => {
+  exitButton.addEventListener('click', () => {
+    const modal = exitButton.closest('.modal'); // Tegishli modalni topish
+    closeModal(modal); // Modalni yopish
   });
 });
-let toast = document.querySelector('.toastfy')
-document.querySelector('.toast_exit').onclick =  function(){
-  toast.classList.remove('show')
-}
-setTimeout(() => {
-  toast.classList.remove('show')
-}, 4000);
+// no update
+document.querySelectorAll('button[type=reset]').forEach((exitButton) => {
+  exitButton.addEventListener('click', () => {
+    const modal = exitButton.closest('.modal');
+    closeModal(modal); 
+  });
+});
+// modal bg clikck hide
+modalAll.forEach((modal) => {
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal(modal);
+  })
+})
+// toast active
+document.querySelectorAll('button[type=submit]').forEach((sendBtn) => {
+  sendBtn.onclick = function (e) { 
+    e.preventDefault()
+    const modal = sendBtn.closest('.modal');
+    closeModal(modal); 
+    toast.classList.add('show')
+    setTimeout(() => {
+      toast.classList.remove('show')
+    }, 4000);
+   }
+})
+});
+

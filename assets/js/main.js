@@ -1,113 +1,117 @@
 
-// const form = document.getElementById('login-form');
-// const usernameInput = document.getElementById('username');
-// const passwordInput = document.getElementById('password');
-// const usernameError = document.getElementById('username-error');
-// const passwordError = document.getElementById('password-error');
-// const errorNotice = document.querySelector('.error-notice');
-// const submitButton = document.querySelector('#login-form button');
+document.addEventListener('DOMContentLoaded', function () {
+  const usernameInput = document.getElementById('username');
+  const passwordInput = document.getElementById('password');
+  const usernameError = document.getElementById('username-error');
+  const passwordError = document.getElementById('password-error');
+  const submitButton = document.getElementById('login');
+  const errorNotice = document.getElementById('error-notice');
+  const form = document.getElementById('login_form');
+  const login_auth = document.getElementById('login_auth');
+  const login_load = document.querySelector('#loading');
 
-// // Formni tekshirish funksiyasi
-// function validateForm() {
-//   const username = usernameInput.value.trim();
-//   const password = passwordInput.value.trim();
+  // Validate the form
+  function validateForm() {
+    const username = usernameInput.value.trim();
+    const password = passwordInput.value.trim();
 
-//   let hasError = false;
+    let hasError = false;
 
-//   if (!username) {
-//     usernameError.style.display = 'block';
-//     document.getElementById('username').style.borderColor='red'
+    if (!username) {
+      usernameError.style.display = 'block';
+      usernameInput.style.borderColor = 'red';
+      hasError = true;
+    } else {
+      usernameError.style.display = 'none';
+      usernameInput.style.borderColor = 'rgba(0, 0, 0, 0.05)';
+    }
 
-//     hasError = true;
-//   } else {
-//     document.getElementById('username').style.borderColor='rgba(0, 0, 0, 0.05)'
-//     usernameError.style.display = 'none';
-//   }
+    if (!password) {
+      passwordError.style.display = 'block';
+      passwordInput.style.borderColor = 'red';
+      hasError = true;
+    } else {
+      passwordError.style.display = 'none';
+      passwordInput.style.borderColor = 'rgba(0, 0, 0, 0.05)';
+    }
 
-//   if (!password) {
-//     document.getElementById('password').style.borderColor='red'
-//     passwordError.style.display = 'block';
-//     hasError = true;
-//   } else {
-//     passwordError.style.display = 'none';
-//       document.getElementById('password').style.borderColor='rgba(0, 0, 0, 0.05)'
-//   }
+    submitButton.disabled = hasError;
+    errorNotice.style.display = hasError ? 'block' : 'none';
 
-//   // Xatolik bo'lsa, tugmani o'chirib qo'yamiz
-//   submitButton.disabled = hasError;
+    return !hasError;
+  }
+  if (form) {
+    usernameInput.addEventListener('input', validateForm);
+    passwordInput.addEventListener('input', validateForm);
+    form.addEventListener('submit', function (event) {
+      if (!validateForm()) {
+        event.preventDefault();
+        if (login_auth) login_auth.style.display = 'none';
+      } else {
+        if (login_load) {
+          login_auth.style.display = 'none'
+          login_load.style.display = 'flex';
+        }
+        event.preventDefault(); 
+        setTimeout(() => {
+          if (login_load) {
+            login_load.style.display = 'none';
+          }
+          form.submit(); 
+        }, 2000);
+      }
+    });
+  }
+  
+if(document.getElementById('close_toast')){
+  document.getElementById('close_toast').addEventListener('click', function() {
+      document.querySelector('.toast-container').classList.remove('show') // Hide immediately when close button is clicked
+  });
 
-//   // Xatolik bo'lsa global xabarni ko'rsatamiz, aks holda yashiramiz
-//   errorNotice.style.display = hasError ? 'block' : 'none';
+}
+// first modal
+if(document.querySelector('#orderButton')){
+    const orderButton = document.getElementById('orderButton');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const orderClose = document.getElementById('orderClose');
+    const cancelButton = document.getElementById('cancelButton');
+    const confirmButton = document.getElementById('confirmButton');
 
-//   return !hasError; // Xatolik bo'lmasa `true` qaytaradi
-// }
+    // Open modal
+    orderButton.addEventListener('click', () => {
+      modalOverlay.classList.add('show');
+    });
 
-// // Input o'zgarishlarini kuzatish
-// if(document.querySelector('#login-form ')){
-// usernameInput.addEventListener('input', validateForm);
-// passwordInput.addEventListener('input', validateForm);    
-// // Form yuborilayotganda
-// form.addEventListener('submit', function (e) {
-//     if (!validateForm()) {
-//       // Xatolik bo'lsa, formni yuborishni to'xtatamiz
-//       e.preventDefault();
-//     }
-//   });
-// }
+    // Close modal
+    const closeModal = () => {
+      modalOverlay.classList.remove('show');
+    };
 
-// // toast
-// // document.getElementById('show-toast').addEventListener('click', function() {
-// //     const toast = document.getElementById('toast-container');
-// //     document.querySelector('.toast-container').classList.add('show')
+    orderClose.addEventListener('click', closeModal);
+    cancelButton.addEventListener('click', closeModal);
 
-// //     setTimeout(function() {
-// //         document.querySelector('.toast-container').classList.remove('show')
-// //     }, 4000);
-// // });
+    // Close modal on clicking outside
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) {
+        closeModal();
+      }
+    });
 
-// document.getElementById('close_toast').addEventListener('click', function() {
-//     document.querySelector('.toast-container').classList.remove('show') // Hide immediately when close button is clicked
-// });
-// if(document.querySelector('#orderButton')){
-//     const orderButton = document.getElementById('orderButton');
-//     const modalOverlay = document.getElementById('modalOverlay');
-//     const orderClose = document.getElementById('orderClose');
-//     const cancelButton = document.getElementById('cancelButton');
-//     const confirmButton = document.getElementById('confirmButton');
-
-//     // Open modal
-//     orderButton.addEventListener('click', () => {
-//       modalOverlay.classList.add('show');
-//     });
-
-//     // Close modal
-//     const closeModal = () => {
-//       modalOverlay.classList.remove('show');
-//     };
-
-//     orderClose.addEventListener('click', closeModal);
-//     cancelButton.addEventListener('click', closeModal);
-
-//     // Close modal on clicking outside
-//     modalOverlay.addEventListener('click', (e) => {
-//       if (e.target === modalOverlay) {
-//         closeModal();
-//       }
-//     });
-
-//     // Confirm button action
-//     confirmButton.addEventListener('click', () => {
-//       alert('Confirmed!');
-//       closeModal();
-//     });
-// }
-
-document.querySelector('.filter').onclick = function(e){
-e.preventDefault()
-document.querySelector('.filter_items').classList.add('active')
+    // Confirm button action
+    confirmButton.addEventListener('click', () => {
+      alert('Confirmed!');
+      closeModal();
+    });
+}
+// filter
+if(document.querySelector('.filter')){
+  document.querySelector('.filter').onclick = function(e){
+  e.preventDefault()
+  document.querySelector('.filter_items').classList.add('active')
+  }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+// all modall
   const modalAll =  document.querySelectorAll('.modal')
   const modal = document.querySelector('#new_orders');
   const modal_products = document.querySelector('#modal_products');
@@ -130,11 +134,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }  
   // toastfy
   let toast = document.querySelector('.toastfy')
+  if(document.querySelector('.toast_exit')){
   document.querySelector('.toast_exit').onclick = function () {
-    toast.classList.remove('show')
+    if(toast){
+      toast.classList.remove('show')
+    }
+  }   
   }
+ 
   setTimeout(() => {
-    toast.classList.remove('show')
+    if(toast){
+
+      toast.classList.remove('show')
+    }
   }, 4000);
   // edit modal
   const edit_btn = document.querySelectorAll('.btn_grup_table .icon:nth-child(2)')
@@ -180,7 +192,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   // all modal close
   function closeModal(modal) {
-    modal.classList.remove('show'); 
+    if(modal){
+
+      modal.classList.remove('show'); 
+    }
   }
   // all moda x close
 document.querySelectorAll('.modal_exit').forEach((exitButton) => {
@@ -190,7 +205,7 @@ document.querySelectorAll('.modal_exit').forEach((exitButton) => {
   });
 });
 // no update
-document.querySelectorAll('button[type=reset]').forEach((exitButton) => {
+document.querySelectorAll('.wrapper button[type=reset]').forEach((exitButton) => {
   exitButton.addEventListener('click', () => {
     const modal = exitButton.closest('.modal');
     closeModal(modal); 
@@ -203,16 +218,25 @@ modalAll.forEach((modal) => {
   })
 })
 // toast active
-document.querySelectorAll('button[type=submit]').forEach((sendBtn) => {
-  sendBtn.onclick = function (e) { 
-    e.preventDefault()
-    const modal = sendBtn.closest('.modal');
-    closeModal(modal); 
-    toast.classList.add('show')
-    setTimeout(() => {
-      toast.classList.remove('show')
-    }, 4000);
-   }
+document.querySelectorAll('.wrapper button[type=submit]').forEach((sendBtn) => {
+  if(sendBtn){
+
+    sendBtn.onclick = function (e) { 
+      e.preventDefault()
+      const modal = sendBtn.closest('.modal');
+      closeModal(modal); 
+      if(toast){
+
+        toast.classList.add('show')
+      }
+      setTimeout(() => {
+        if(toast){
+          toast.classList.remove('show')
+        }
+        
+      }, 4000);
+     }
+  }
 })
 });
 

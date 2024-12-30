@@ -5,26 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" crossorigin href="https://dds.dell.com/components/2.44.2/css/dds-main.min.css" />
 </head>
 <body class="login">
   <div class="background">
-    <div class="login-container">
+    <div class="login_container flex column" id="login_auth">
       <h1 class="flex center a_center"><img src="./assets/images/logo.svg" alt=""><span>CRM завод</span></h1>
       <h2>Авторизация</h2>
-      <form id="login-form" action="index.html">
-        <div class="input-group">
+      <form class="login_form flex column" id="login_form" action="index.html">
+        <div class="input_group flex column">
           <label for="username">Логин</label>
-          <input type="text" id="username" placeholder="Лавров Мстислав Гоголевич">
-          <span class="error-message" id="username-error">Ошибка в логине, попробуйте проверить данные</span>
+          <input type="text" id="username" placeholder="ФамилияИО">
+          <span class="error-message" id="username-error">⚠ Ошибка в логине, попробуйте проверить данные</span>
         </div>
-        <div class="input-group">
+        <div class="input_group  flex column">
           <label for="password">Пароль</label>
-          <input type="password" id="password">
-          <span class="error-message" id="password-error">Ошибка в пароле, попробуйте проверить данные</span>
+          <input type="password" id="password" placeholder="Введите пароль">
+          <span class="error-message" id="password-error">⚠ Ошибка в пароле, попробуйте проверить данные</span>
         </div>
-        <button type="submit">Войти</button>
-        <p class="error-notice">К сожалению такой пользователь не найден</p>
+        <button type="submit" id="login" disabled>Войти</button>
+        <p class="error-notice" id="error-notice">К сожалению такой пользователь не найден</p>
       </form>
+    </div>
+    <div class="login_container flex column a_center" id="loading">
+        <h1 class="flex center a_center"><img src="./assets/images/logo.svg" alt=""><span>CRM завод</span></h1>
+        <h2>Добро пожаловать!</h2>
+        <img src="assets/images/avatar.svg" alt="">
+        <h3 class="form_title">
+          Лавров Мстислав Гогенович
+        </h3>
+        <div class="dds__loading-indicator">
+          <div class="dds__loading-indicator__spinner"></div>
+        </div>
     </div>
   </div>
   <script src="./assets/js/main.js"></script>

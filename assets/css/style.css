@@ -713,6 +713,22 @@
   font-style: normal;
   font-weight: 600;
   width: 100%;
+  display: flex;
+  gap: 6px;
+  border-radius: 16px;
+}
+.modal .modal_content .modal_body .modal_items .modal_items_lists li span.active {
+  width: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2px 8px;
+}
+.modal .modal_content .modal_body .modal_items .modal_items_lists li span.active .status {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  display: block;
 }
 .modal .modal_content .modal_body .modal_items .modal_items_lists li span:last-child {
   font-weight: 400;
@@ -1007,6 +1023,111 @@
 .toastfy .toast_exit {
   cursor: pointer;
   font-size: 24px;
+}
+
+.login {
+  background: url(../images/login_bg.png) no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 12;
+}
+.login .background {
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .background .login_container {
+  border-radius: 8px;
+  padding: 24px;
+  background: #FFF;
+  width: 416px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.24), 0px 12px 24px 0px rgba(0, 0, 0, 0.2);
+  gap: 24px;
+}
+.login .background .login_container h1 {
+  font-size: 24px;
+  color: #DC2626;
+  font-style: normal;
+  font-weight: 600;
+  gap: 16px;
+}
+.login .background .login_container h2 {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+.login .background .login_container .login_form {
+  display: flex;
+  gap: 24px;
+}
+.login .background .login_container .login_form .input_group {
+  gap: 4px;
+}
+.login .background .login_container .login_form .input_group label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.login .background .login_container .login_form .input_group input {
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 8px 16px;
+  outline: none;
+  border: 1px solid transparent;
+}
+.login .background .login_container .login_form .input_group input:focus {
+  border-color: #e1dcdc;
+}
+.login .background .login_container .login_form .input_group .error-message {
+  font-size: 12px;
+  font-style: normal;
+  color: #DC2626;
+  font-weight: 400;
+  display: none;
+}
+.login .background .login_container .login_form button {
+  cursor: pointer;
+  width: 240px;
+  margin: 0 auto;
+  padding: 8px 12px;
+  opacity: 0.99;
+  border-radius: 6px;
+  outline: none;
+  border: 0;
+  background: #3B82F6;
+  transition: all 0.2s linear;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+}
+.login .background .login_container .login_form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.login .background .login_container .login_form button:hover {
+  opacity: 1;
+}
+.login .background .login_container .login_form .error-notice {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #DC2626;
+  display: none;
+}
+.login #loading {
+  display: none;
 }
 
 body {

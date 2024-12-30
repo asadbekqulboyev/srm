@@ -1,0 +1,72 @@
+.logistic_header {
+    width: 100%;
+    padding: 16px 26px 16px 16px;
+    border-bottom: 1px solid #E6E6E6;
+
+    .header_left {
+        gap: 32px;
+
+        h1 {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        span {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.50);
+            padding-left: 6px;
+        }
+        p{
+            font-size: 16px;
+font-style: normal;
+font-weight: 600;
+        }
+    }
+
+    .modal_btns_gorup {
+        gap: 8px;
+
+        a {
+
+            opacity: 0.99;
+            text-decoration: none;
+            transition: all .2s linear;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &:first-child {
+                border: 1px solid rgba(0, 0, 0, 0.10);
+                padding: 2px 8px;
+                background: #fff;
+                border-radius: 6px;
+
+                span {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    color: rgba(0, 0, 0, 0.80);
+                }
+
+            }
+
+            &.trash_modal {
+                display: flex;
+                width: 24px;
+                height: 24px;
+                flex: 0 0 auto;
+                border-radius: 4px;
+                background: #EF4444;
+            }
+        }
+
+        .exit_edit {
+            padding-left: 20px;
+        }
+    }
+
+}

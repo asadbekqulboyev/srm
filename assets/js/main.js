@@ -238,5 +238,23 @@ document.querySelectorAll('.wrapper button[type=submit]').forEach((sendBtn) => {
      }
   }
 })
+
 });
 
+// check modal
+let check_form = document.querySelector('#check_form')
+let check = document.querySelector('#check')
+if(check){
+  check.onclick = function(e) {
+    e.preventDefault()
+    check_form.classList.add('show')
+};
+check_form.onclick = function (e) {
+  e.stopPropagation();
+};
+window.onclick = function(e){
+  if (e.target !== check && !check.contains(e.target) && !check_form.contains(e.target)){
+    check_form.classList.remove('show');
+  }
+}
+}

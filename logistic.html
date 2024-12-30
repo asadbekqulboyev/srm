@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>График Заказов</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="wrappers">
+
+  </div>
+  <header class="logistic_header flex a_center between">
+    <div class="header_left flex a_center">
+      <h1>Заказ <span> №123 (24.03.2024 – 29.03.2024)</span></h1>
+      <p>Россия, Москва / Планерная / Тюмень</p>
+    </div>
+    <div class="modal_btns_gorup flex a_center">
+      <a href="" class="flex a_center center">
+        <img src="assets/images/modal_xsl.svg" alt="">
+        <span>Выгрузить отчет</span>
+      </a>
+      <a href="" class="flex a_center center  trash_modal">
+        <img src="./assets/images/trash_icon.svg" class="" alt="">
+      </a>
+      <span class="exit_edit modal_exit">&times;</span>
+    </div>
+  </header>
+  <main class="main_logistic">
+    <ul class="menu_lists flex">
+      <li>
+        <a href="" class="flex a_center" id="check">
+          <div class="icon_link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">
+              <path
+                d="M17 15H2C0.895431 15 0 14.1046 0 13V2.8125V2C0 0.895431 0.895432 0 2 0H6.65L8.55 1.875H18.0625C18.5803 1.875 19 2.29473 19 2.8125V13C19 14.1046 18.1046 15 17 15Z"
+                fill="#54C460" />
+            </svg>
+          </div>
+          <div class="flex column">
+            <b>Рекламации</b>
+            <span>Завершены 21 из 21</span>
+          </div>
+          <div class="check_form" id="check_form">
+            <form class="modal_content">
+              <div class="modal_body flex column a_center">
+                  <div class="status_options">
+                      <label class="status_option">
+                        <input type="checkbox" name="check" value="new"  />
+                        <img src="./assets/images/check_green.svg" alt="">
+                        <span class="status_circle new"></span>
+                        <div class="icon">
+                          <img src="./assets/images/file.svg" alt="">
+                          <span>xlsx</span>
+                        </div>
+                        <span class="status_text">
+                          Проблема в пару слов
+                          <small>И её описание, дата и прочие детали</small>
+                        </span>
+                      </label>
+                      <label class="status_option">
+                        <input type="checkbox" name="check" value="new" checked />
+                        <img src="./assets/images/check_green.svg" alt="">
+                        <span class="status_circle new"></span>
+                        <div class="icon">
+                          <img src="./assets/images/file.svg" alt="">
+                          <span>xlsx</span>
+                        </div>
+                        <span class="status_text">
+                          Проблема в пару слов
+                          <small>И её описание, дата и прочие детали</small>
+                        </span>
+                      </label>
+                      <label class="status_option">
+                        <input type="checkbox" name="check" value="new"  />
+                        <img src="./assets/images/check_green.svg" alt="">
+                        <span class="status_circle new"></span>
+                        <div class="icon">
+                          <img src="./assets/images/file.svg" alt="">
+                          <span>docx</span>
+                        </div>
+                        <span class="status_text">
+                          Проблема в пару слов
+                          <small>И её описание, дата и прочие детали</small>
+                        </span>
+                      </label>
+                      <label class="status_option">
+                        <input type="checkbox" name="check" value="new"  checked/>
+                        <img src="./assets/images/check_green.svg" alt="">
+                        <span class="status_circle new"></span>
+                        <div class="icon">
+                          <img src="./assets/images/file.svg" alt="">
+                          <span>xlsx</span>
+                        </div>
+                        <span class="status_text">
+                          Проблема в пару слов
+                          <small>И её описание, дата и прочие детали</small>
+                        </span>
+                      </label>
+                      <label class="status_option">
+                        <input type="checkbox" name="check" value="new" checked />
+                        <img src="./assets/images/check_green.svg" alt="">
+                        <span class="status_circle new"></span>
+                        <div class="icon">
+                          <img src="./assets/images/file.svg" alt="">
+                          <span>docx</span>
+                        </div>
+                        <span class="status_text">
+                          Проблема в пару слов
+                          <small>И её описание, дата и прочие детали</small>
+                        </span>
+                      </label>
+                      <label class="status_option">
+                        <input type="checkbox" name="check" value="new"  checked/>
+                        <img src="./assets/images/check_green.svg" alt="">
+                        <span class="status_circle new"></span>
+                        <div class="icon">
+                          <img src="./assets/images/file.svg" alt="">
+                          <span>xlsx</span>
+                        </div>
+                        <span class="status_text">
+                          Проблема в пару слов
+                          <small>И её описание, дата и прочие детали</small>
+                        </span>
+                      </label>
+                      <label class="status_option">
+                        <input type="checkbox" name="check" value="new" checked />
+                        <img src="./assets/images/check_green.svg" alt="">
+                        <span class="status_circle new"></span>
+                        <div class="icon">
+                          <img src="./assets/images/file.svg" alt="">
+                          <span>docx</span>
+                        </div>
+                        <span class="status_text">
+                          Проблема в пару слов
+                          <small>И её описание, дата и прочие детали</small>
+                        </span>
+                      </label>
+                    </div>
+                    
+              </div>
+          </form>
+          </div>
+        </a>
+      </li>
+      <li>
+        <ul class="flex a_center">
+          <li>
+            <a href="" class=" a_center flex">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                  <path opacity="0.4"
+                    d="M18.3339 2.56092L9.76742 0.0368834C9.74864 0.0276626 9.72989 0.0276626 9.71111 0.0276626C9.69232 0.0276626 9.67358 0.0184417 9.66419 0.0184417C9.60791 0.00922083 9.5516 0 9.49532 0C9.43901 0 9.3827 0.00922083 9.32642 0.0184417C9.30764 0.0184417 9.28889 0.0276626 9.2795 0.0276626C9.26075 0.0276626 9.24197 0.0368834 9.22323 0.0368834L7.30915 0.598793L5.40443 1.1607V5.86798L3.29331 6.26407V1.78712L1.44494 2.33063L0.666138 2.56092C0.272098 2.68068 0 3.03992 0 3.44526V14.5547C0 14.9601 0.272098 15.3193 0.666138 15.4391L9.22323 17.9632C9.30764 17.9908 9.40148 18 9.49532 18C9.58913 18 9.67358 17.9908 9.76742 17.9632L18.3338 15.4391C18.7279 15.3193 19 14.9601 19 14.5547V3.44526C19 3.03992 18.7279 2.68068 18.3339 2.56092ZM17.1235 13.8547L10.4336 15.826V2.1464L17.1235 4.11771V13.8547Z"
+                    fill="#848484" />
+                </svg>
+              </div>
+              <div class="link_info flex column">
+                <b>Логистика</b>
+                <span>В процессе 12 из 18</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="link_info flex column">
+                <b>Диван, кресло</b>
+                <span>25.03 12:00 – 25.03 14:00</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="" class="orange">
+              <div class="link_info flex column">
+                <b>Комод</b>
+                <span>25.03 12:00 – 25.03 14:00</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="link_info flex column">
+                <b>Тумба прикроватная</b>
+                <span>25.03 12:00 – 25.03 14:00</span>
+              </div>
+            </a>
+          </li>
+          <li><a href="">
+              <div class="link_info flex column">
+                <b>Шифоньерка</b>
+                <span>25.03 12:00 – 25.03 14:00</span>
+              </div>
+            </a></li>
+        </ul>
+      </li>
+    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <div class="top_title">
+              Цех дерева
+            </div>
+            <div class="flex column a_start end">
+            <span class="date">123.1 / В работу 25.03</span>
+            <b>Тумба прикроватная</b>
+            <span class="name">
+              к. Боженов
+            </span>
+            </div>
+          </th>
+          <th>
+            <div class="top_title">
+              Цех дерева
+            </div>
+            <div class="title_table">
+              Раскрой
+            </div>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <div class="title_table">
+              Кромка
+            </div>
+            <a href="" class="flex column ">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <div class="title_table">
+              Пресс
+            </div>
+            <a href="" class="flex column orange">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span> 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+          <div class="title_table">
+              ЧПУ
+          </div>
+          <a href="" class="flex column ">
+          <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+          <span class="date"><span>28.03 </span><span> 11:00–12:00</span></span>
+          </a>
+          </th>
+          <th>
+          <div class="title_table">
+              Ферганский Чугун 
+          </div>
+          <a href="" class="flex column ">
+          <span class="date"><span>25.03</span><span> 12:00–14:00</span></span>
+          <span class="date"><span>28.03 </span><span>11:00–12:00</span></span>
+          </a>
+          </th>
+          <th>
+            <div class="title_table">
+              Лазерный рек.
+            </div>
+            <a href="" class="flex column ">
+            <span class="date"><span></span>25.03 <span>12:00–14:00</span></span>
+            <span class="date"><span></span>29.03 <span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <div class="title_table">
+              Малярка
+            </div>
+            <a href="" class="flex column bg_none">
+            </a>
+          </th>
+          <th>
+            <div class="top_title">
+              Цех металла
+            </div>
+            <div class="title_table">
+              Пила ленточная
+            </div>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <div class="title_table">
+              Гильотина
+            </div>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <div class="title_table">
+              Лазерный 
+            </div>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <div class="title_table">
+              ГРА 
+            </div>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <div class="title_table">
+              Листогибочный 
+            </div>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <div class="title_table">
+              Шлифовальный            
+            </div>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <div class="title_table">
+              Вальцовочный            
+            </div>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.2  /  В работу 26.03</span>
+            <b>Стол</b>
+            <span class="name">
+              к. Портапенко
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column bg_none">
+              
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange_active">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.4  /  В работу 25.03</span>
+            <b> Шифоньерка</b>
+            <span class="name">
+              к. Аркадьев
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column orange_active">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column bg_none">
+              
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange_active">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.3  /  В работу 25.03</span>
+            <b>Журнальные столик</b>
+            <span class="name">
+              к. Аркадьев
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.3  /  В работу 25.03</span>
+            <b>Кровать</b>
+            <span class="name">
+              к. Аркадьев
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+           <a href="" class="bg_none"></a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.3  /  В работу 25.03</span>
+            <b>Диван</b>
+            <span class="name">
+              к. Аркадьев
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column bg_none">
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.3  /  В работу 25.03</span>
+            <b>Комод</b>
+            <span class="name">
+              к. Аркадьев
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.3  /  В работу 25.03</span>
+            <b>Шкаф</b>
+            <span class="name">
+              к. Аркадьев
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.2  /  В работу 26.03</span>
+            <b>Стол</b>
+            <span class="name">
+              к. Портапенко
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column bg_none">
+              
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange_active">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.4  /  В работу 25.03</span>
+            <b> Шифоньерка</b>
+            <span class="name">
+              к. Аркадьев
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column orange_active">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column bg_none">
+              
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange_active">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.3  /  В работу 25.03</span>
+            <b>Журнальные столик</b>
+            <span class="name">
+              к. Аркадьев
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.3  /  В работу 25.03</span>
+            <b>Кровать</b>
+            <span class="name">
+              к. Аркадьев
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+           <a href="" class="bg_none"></a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.3  /  В работу 25.03</span>
+            <b>Диван</b>
+            <span class="name">
+              к. Аркадьев
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column bg_none">
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.3  /  В работу 25.03</span>
+            <b>Комод</b>
+            <span class="name">
+              к. Аркадьев
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="flex column a_start ">
+            <span class="date">123.3  /  В работу 25.03</span>
+            <b>Шкаф</b>
+            <span class="name">
+              к. Аркадьев
+            </span>
+            </div>
+          </th>
+          <th>
+            <a href="" class="flex column">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column orange">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span>29.03 </span><span>11:00–12:00</span></span>
+              </a>
+          </th>
+          <th>
+            <a href="" class="flex column ">
+            <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+            <span class="date"><span> 00.00 11:00–12:00</span></span>
+            </a>
+          </th>
+          <th>
+            <a href="" class="flex column">
+              <span class="date"><span>25.03 </span><span>12:00–14:00</span></span>
+              <span class="date"><span> 00.00 11:00–12:00</span></span>
+              </a>
+          </th>
+        </tr>
+
+      </tbody>
+    </table>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

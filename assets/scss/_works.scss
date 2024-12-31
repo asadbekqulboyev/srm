@@ -1,0 +1,33 @@
+.works {
+    span.active {
+        width: fit-content;
+        padding: 0px 8px;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        border-radius: 36px;
+        gap: 6px;
+
+        font-size: 14px;
+font-style: normal;
+font-weight: 400;
+        .icon_online {
+            background: #22C55E;
+            width: 8px;
+            height: 8px;
+            flex: 0 0 auto;
+            border-radius: 50%;
+        }
+    }
+
+    tbody {
+
+        tr {
+            td {
+                &:nth-child(6) {
+
+                    width: auto !important;
+                }
+
+            }
+        }
+    }
+}

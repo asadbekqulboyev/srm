@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.svg" />
+    <title>CRM завод</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="top">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.svg" alt="">
+                    <div class="word">CRM завод</div>
+                </a>
+                <a href="#" class="profil">
+                    <img src="assets/images/user_logo.png" alt="">
+                    <div class="right">
+                        <div class="texts">
+                            <div class="name">
+                                Владислав Мохеев
+                            </div>
+                            <div class="constructor">
+                                Главный конструктор
+                            </div>
+                        </div>
+                        <div class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" viewBox="0 0 12 24"
+                                fill="none">
+                                <path
+                                    d="M11.5306 10.5307L6.53063 15.5307C6.46095 15.6007 6.37816 15.6561 6.28699 15.694C6.19583 15.7318 6.09809 15.7513 5.99938 15.7513C5.90067 15.7513 5.80293 15.7318 5.71176 15.694C5.6206 15.6561 5.53781 15.6007 5.46813 15.5307L0.468128 10.5307C0.327232 10.3898 0.248077 10.1987 0.248077 9.99948C0.248077 9.80023 0.327232 9.60913 0.468128 9.46823C0.609025 9.32734 0.800121 9.24818 0.999378 9.24818C1.19864 9.24818 1.38973 9.32734 1.53063 9.46823L6 13.9376L10.4694 9.46761C10.6103 9.32671 10.8014 9.24756 11.0006 9.24756C11.1999 9.24756 11.391 9.32671 11.5319 9.46761C11.6728 9.60851 11.7519 9.7996 11.7519 9.99886C11.7519 10.1981 11.6728 10.3892 11.5319 10.5301L11.5306 10.5307Z"
+                                    fill="black" fill-opacity="0.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <div class="menu">
+                    <a href="./index.html" class="item ">
+                        <div class="icon">
+                            <img src="./assets/images/menu_icon1.svg" alt="">
+                        </div>
+                        <div class="text">Проекты</div>
+                    </a>
+                    <a href="user_dashbord.html" class="item active">
+                        <div class="icon">
+                            <img src="./assets/images/menu_icon2.svg" alt="">
+                        </div>
+                        <div class="text">Пользователи</div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="icon">
+                            <img src="./assets/images/menu_icon3.svg" alt="">
+                        </div>
+                        <div class="text">Цеха</div>
+                    </a>
+                </div>
+            </div>
+            <div class="bottom">
+                <a href="#" class="item">
+                    <img src="./assets/images/menu_icon4.svg" alt="">
+                    <div class="text">Настройки</div>
+                </a>
+            </div>
+        </div>
+        <main class="main works">
+            <div class="projects">
+                <div class="item_title">Пользователи</div>
+                <div class="works">
+                    <a href="" class="item active">
+                        <div class="text">Все</div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="text">Администраторы</div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="text">Конструктор</div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="text">Линейный рабочий</div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="text">Мастер цеха</div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="text">Начальник цеха</div>
+                    </a>
+
+                </div>
+                
+                <div class="actions flex between">
+                    <form action="">
+                        <input type="text" placeholder="Поиск" class="search">
+                    </form>
+                    <div class="flex a_center btn_group">
+                        <a href="" class="filter flex a_center">
+                            <img src="assets/images/filters.svg" alt="">
+                            <span>Фильтр</span>
+                        </a>
+                        <a href="#" class="new_order"><img src="./assets/images/plus.svg" alt="">Создать новый проект
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="filter_items">
+                    <ul class="flex a_center "> 
+                        <li><a href="" id="delete_item"><img src="assets/images/trash_icon.svg" alt=""><span>Удалить выбранные</span></a></li>
+                        <li><a href="" id="status_open"><img src="assets/images/status_icon.svg" alt=""><span>Изменить статус</span></a></li>
+                        <li><a href=""><img src="assets/images/xlsx.svg" alt=""><span>Выгрузить отчет</span></a></li>
+                        <li><a href="">Отменить выбор</a></li>
+                    </ul>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>
+                                <div class="item">
+                                    <img src="./assets/images/top_filter.svg" alt="">
+                                    № заказа
+                                </div>
+                            </th>
+                            <th>
+                                <div class="item">
+                                    <img src="./assets/images/top_filter.svg" alt="">
+                                    Дата создания
+                                </div>
+
+                            </th>
+                            <th>
+                                <div class="item">
+                                    <img src="./assets/images/top_filter.svg" alt="">
+                                    Дата сдачи
+                                </div>
+
+                            </th>
+                            <th>
+                                <div class="item">
+                                    <img src="./assets/images/top_filter.svg" alt="">
+                                    Статус
+                                </div>
+
+                            </th>
+                            <th>
+                                <div class="item">
+                                    <img src="./assets/images/top_filter.svg" alt="">
+                                    Текущий этап
+                                </div>
+                            </th>
+
+                            <th>
+                                <div class="item">
+                                    <img src="./assets/images/top_filter.svg" alt="">
+                                    Клиент
+                                </div>
+                            </th>
+                            <th>
+                                <div class="item">
+                                    <img src="./assets/images/top_filter.svg" alt="">
+                                    Точка продаж
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <span>№: 43178</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span class="active flex a_center">
+                                    <span class="icon_online"></span>
+                                    <span>В работе</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Цех №4</span>
+                            </td>
+                            <td><span>Сизых Леша Смелых</span></td>
+                            <td><span>Наименование ТЦ</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <span>№: 39635</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span class="active flex a_center">
+                                    <span class="icon_online"></span>
+                                    <span>В работе</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Цех №4</span>
+                            </td>
+                            <td><span>Сизых Леша Смелых</span></td>
+                            <td><span>Наименование ТЦ</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <span>№: 39635</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span class="active flex a_center">
+                                    <span class="icon_online"></span>
+                                    <span>В работе</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Цех №4</span>
+                            </td>
+                            <td><span>Сизых Леша Смелых</span></td>
+                            <td><span>Наименование ТЦ</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <span>№: 43178</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span class="active flex a_center">
+                                    <span class="icon_online"></span>
+                                    <span>В работе</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Цех №4</span>
+                            </td>
+                            <td><span>Сизых Леша Смелых</span></td>
+                            <td><span>Наименование ТЦ</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <span>№: 39635</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span class="active flex a_center">
+                                    <span class="icon_online"></span>
+                                    <span>В работе</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Цех №4</span>
+                            </td>
+                            <td><span>Сизых Леша Смелых</span></td>
+                            <td><span>Наименование ТЦ</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <span>№: 39635</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span class="active flex a_center">
+                                    <span class="icon_online"></span>
+                                    <span>В работе</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Цех №4</span>
+                            </td>
+                            <td><span>Сизых Леша Смелых</span></td>
+                            <td><span>Наименование ТЦ</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <span>№: 43178</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span class="active flex a_center">
+                                    <span class="icon_online"></span>
+                                    <span>В работе</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Цех №4</span>
+                            </td>
+                            <td><span>Сизых Леша Смелых</span></td>
+                            <td><span>Наименование ТЦ</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <span>№: 39635</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span class="active flex a_center">
+                                    <span class="icon_online"></span>
+                                    <span>В работе</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Цех №4</span>
+                            </td>
+                            <td><span>Сизых Леша Смелых</span></td>
+                            <td><span>Наименование ТЦ</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <span>№: 39635</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span class="active flex a_center">
+                                    <span class="icon_online"></span>
+                                    <span>В работе</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Цех №4</span>
+                            </td>
+                            <td><span>Сизых Леша Смелых</span></td>
+                            <td><span>Наименование ТЦ</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <span>№: 43178</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span class="active flex a_center">
+                                    <span class="icon_online"></span>
+                                    <span>В работе</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Цех №4</span>
+                            </td>
+                            <td><span>Сизых Леша Смелых</span></td>
+                            <td><span>Наименование ТЦ</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <span>№: 39635</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span class="active flex a_center">
+                                    <span class="icon_online"></span>
+                                    <span>В работе</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Цех №4</span>
+                            </td>
+                            <td><span>Сизых Леша Смелых</span></td>
+                            <td><span>Наименование ТЦ</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <span>№: 39635</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span>25.03.2024</span>
+                            </td>
+                            <td>
+                                <span class="active flex a_center">
+                                    <span class="icon_online"></span>
+                                    <span>В работе</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span>Цех №4</span>
+                            </td>
+                            <td><span>Сизых Леша Смелых</span></td>
+                            <td><span>Наименование ТЦ</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form action="" class="table_footer flex between a_center">
+                    <div class="footer_info_count flex a_center">
+                        <select name="" id="">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                        </select>
+                        <span>объектов на странице</span>
+                    </div>
+                    <div class="footer_info">
+                        1 – 100 из 2,448 объектов
+                    </div>
+                    <div class="table_right flex a_center ">
+                        <div class="footer_info_count flex a_center">
+                            <select name="" id="">
+                                <option value="">40</option>
+                                <option value="">30</option>
+                                <option value="">20</option>
+                            </select>
+                            <span>из 20 страниц</span>
+                        </div>
+                        <div class="btn_group flex a_center">
+                            <a href="" class="btn">
+                                <img src="assets/images/left.svg" alt="">
+                            </a>
+                            <a href="" class="btn">
+                                <img src="assets/images/right.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <!-- modal big -->
+    <div class="modal" id="new_orders">
+        <form class="modal_content">
+            <div class="modal_header flex a_center between">
+                <h2>Новый пользователь</h2>
+                <span class="close_modal modal_exit">&times;</span>
+            </div>
+            <div class="modal_body flex column">
+                <!-- items 1 -->
+                <div class="modal_items flex column">
+                    <div class="item_title">Тип пользователя</div>
+                    <!-- select 1 -->
+                    <div class="input_item flex between">
+                        <label class="input_title flex a_center center">
+                            <input type="radio" name="mission">
+                            <span>Заказчик</span>
+                        </label>
+                        <label class="input_title flex a_center center">
+                            <input type="radio" name="mission">
+                            <span>Сотрудник</span>
+                        </label>
+                        <label class="input_title flex a_center center">
+                            <input type="radio" name="mission">
+                            <span>Менеджер</span>
+                        </label>
+                    </div>
+                </div>
+                <!-- items 2 -->
+                <div class="modal_items flex column">
+                    <div class="item_title">Информация о Заказчике</div>
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            Город
+                        </div>
+                        <select name="" id="">
+                            <option value="">Введите название города и выберите из списка</option>
+                            <option value="">Введите название города и выберите из списка2</option>
+                        </select>
+                        <div class="sub_input_info">Для поиска города достаточно ввести первые 3 буквы</div>
+                      </label>
+                    <!-- date 1 -->
+                     <div class="input_items flex between a_center">
+                        
+                        <div class="modal_imtes flex">
+                            <div class="modal_input flex column">
+                                <div class="input_title">
+                                    Фамилия клиента
+                                </div>
+                                <input type="text" name="firstName" placeholder="Иванов">
+                            </div>
+                        </div>
+                        <div class="modal_imtes flex">
+                            <div class="modal_input flex column">
+                                <div class="input_title">
+                                    Имя клиента
+                                </div>
+                                <input type="text" name="firstName" placeholder="Иван">
+                            </div>
+                        </div>
+                     </div>
+                    <!-- date 2 -->
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            Отчество клиента
+                        </div>
+                        <input type="text" name="client" placeholder="Необязательно" >
+                    </label>
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            Номер телефона клиента
+                        </div>
+                        <input type="tel" name="tel" placeholder="+7 (999) 999 99-99" >
+                    </label>
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            Почтовый адрес пользователя
+                        </div>
+                        <input type="email" name="email" placeholder="mail@mail.com" >
+                    </label>
+                </div>
+                <!-- items 2 -->
+                <div class="modal_items flex column">
+                    <div class="item_title">Информация о заказе</div>
+                    <label class="input_item flex a_center start">
+                        <input type="checkbox" name="check" id="" checked>
+                        <div class="input_title">
+                            Прикреплен к заказу
+                        </div>
+                      </label>
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            Выберите заказ
+                        </div>
+                        <select name="" id="">
+                            <option value="">Заказ №1235213 от 25.03.2024 (в работе)</option>
+                            <option value="">Введите название города и выберите из списка2</option>
+                        </select>
+                        <div class="sub_input_info">Можно ввести номер заказа для поиска</div>
+                      </label>
+                </div>
+                <!-- items 1 -->
+                <div class="modal_items flex column">
+                    <div class="item_title">Дополнительная информация</div>
+                    <ul class="modal_items_lists">
+                        <li><span>Заказ</span><span>№4285232</span></li>
+                        
+                        <li><span>Дата создания</span><span>25.03.2024</span></li>
+                        <li><span>Дата сдачи</span><span>25.03.2024</span></li>
+                        <li><span>Статус заказа</span><span><span class="active flex a_center"><span class="status" style="background: #22C55E;"></span><span>В работе</span></span></span></li>
+                        <li><span>Название ТЦ, откуда заказ</span><span>
+                            Название ТЦ, откуда заказ
+                        Торговый центр “Мебель Плаза” ( <a href="">ул. Баранова, 87, Ижевск</a>
+                        )
+                        </span></li>
+                        <li><span>Детали заказа</span><span>Требует в сборке, дополнительные стяжки и окрашивание по желанию мастера</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal_footer flex a_center ">
+                <button type="reset">Отменить</button>
+                <button type="submit">Создать заказ</button>
+            </div>
+        </form>
+    </div>
+    <!-- edit modal -->
+    <div class="modal " id="edit_modal">
+        <form class="modal_content">
+            <div class="modal_header flex a_center between">
+                <div class="modal_title">
+                    <h2>Новый пользователь <span class="edit_title_sm">Сизый Лилия</span></h2>
+                </div>
+                <div class="modal_btns_gorup flex a_center">
+                    <a href="" class="flex a_center center">
+                        <img src="assets/images/modal_xsl.svg" alt="">
+                        <span>Выгрузить отчет</span>
+                    </a>
+                    <a href="" class="flex a_center center  trash_modal">
+                        <img src="./assets/images/trash_icon.svg" class="" alt="">
+                    </a>
+                    <span  class="exit_edit modal_exit">&times;</span>
+                </div>
+            </div>
+            <div class="modal_body flex column">
+                <!-- items 1 -->
+                 <a  href="#" class="modal_edit_btn flex a_center " id="modal_open_update">
+                    <img src="assets/images/pen_black.svg" alt="">
+                    <span>Редактировать</span>
+                 </a>
+                <div class="modal_items flex column">
+                    <ul class="modal_items_lists none_p">
+                        <li><span> Дата создания</span><span>25.03.2024</span></li>
+                        <li><span>Тип пользователя</span><span>Заказчик</span></li>
+                        <li><span>Город</span><span>Москва, МО</span></li>
+                        <li><span>Фамилия клиента</span><span>Иванов</span></li>
+                        <li><span>Имя клиента</span><span>Иван</span></li>
+                        <li><span>Номер телефона клиента</span><span>+7 999 999-99-99</span></li>
+                        <li><span>Электронная почта клиента</span> <span>mail@mail.com</span></li>
+                        <li><label class="flex a_center"><input type="checkbox" checked name="check"> <span>Прикреплен к заказу</span></label></li>
+                    </ul>
+                </div>
+                <!-- items 2 -->
+                <div class="modal_items flex column">
+                    <div class="item_title">Дополнительная информация</div>
+                    <ul class="modal_items_lists">
+
+                        <li><span>Заказ</span><span>№4285232</span></li>
+                        <li><span>Дата создания</span><span>25.03.2024</span></li>
+                        <li><span>Дата сдачи</span><span>25.03.2024</span></li>
+                        <li><span>Статус заказа</span><span class="active">В работе</span></li>
+                        <li><span>Название ТЦ, откуда заказ</span><span>
+                            Название ТЦ, откуда заказ
+                        Торговый центр “Мебель Плаза” ( <a href="">ул. Баранова, 87, Ижевск</a>
+                        )
+                        </span></li>
+                        <li><span>Детали заказа</span><span>Требует в сборке, дополнительные стяжки и окрашивание по желанию мастера</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal_footer flex a_center ">
+                <button type="reset">Отменить</button>
+                <button type="submit">Создать заказ</button>
+            </div>
+        </form>
+    </div>
+    <!-- edit modal 2 -->
+    <div class="modal" id="edit_modal2">
+        <form class="modal_content">
+            <div class="modal_header flex a_center between">
+                <div class="modal_title">
+                    <h2>Новый пользователь <span class="edit_title_sm">Сизый Лилия</span></h2>
+                </div>
+                <div class="modal_btns_gorup flex a_center">
+                    <a href="" class="flex a_center center">
+                        <img src="assets/images/modal_xsl.svg" alt="">
+                        <span>Выгрузить отчет</span>
+                    </a>
+                    <a href="" class="flex a_center center  trash_modal">
+                        <img src="./assets/images/trash_icon.svg" class="" alt="">
+                    </a>
+                    <span  class="exit_edit modal_exit">&times;</span>
+                </div>
+            </div>
+            <div class="modal_body flex column">
+                <!-- items 1 -->
+                 <div class="modal_items flex column">
+                    <div class="item_title">Режим редактирования</div>
+                    <div class="flex modal_top_btn">
+                        <a  href="" class="modal_edit_btn blue flex a_center blue">
+                            Сохранить изменения
+                         </a>
+                        <a  href="" class="modal_edit_btn  flex a_center ">
+                            Отменить изменения
+                         </a>
+                        
+                     </div>
+                 </div>
+                 
+                 
+                <div class="modal_items flex column">
+                    <ul class="modal_items_lists none_p">
+                        <li><span> Дата создания</span><span>25.03.2024</span></li>
+                        <li><span>Тип пользователя</span><span>Заказчик</span></li>
+                    </ul>
+                </div>
+                <div class="modal_items flex column">
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            Город
+                        </div>
+                        <select name="" id="">
+                            <option value="">Введите название города и выберите из списка</option>
+                            <option value="">Введите название города и выберите из списка2</option>
+                        </select>
+                        <div class="sub_input_info">Для поиска города достаточно ввести первые 3 буквы</div>
+                      </label>
+                    <!-- date 1 -->
+                     <div class="input_items flex between a_center">
+                        
+                        <div class="modal_imtes flex">
+                            <div class="modal_input flex column">
+                                <div class="input_title">
+                                    Фамилия клиента
+                                </div>
+                                <input type="text" name="firstName" placeholder="Иванов">
+                            </div>
+                        </div>
+                        <div class="modal_imtes flex">
+                            <div class="modal_input flex column">
+                                <div class="input_title">
+                                    Имя клиента
+                                </div>
+                                <input type="text" name="firstName" placeholder="Иван">
+                            </div>
+                        </div>
+                     </div>
+                    <!-- date 2 -->
+                    <label class="input_item flex column ">
+                        <input type="text" name="client" placeholder="Необязательно" >
+                    </label>
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            Город
+                        </div>
+                        <input type="tel" name="tel" placeholder="+7 (999) 999 99-99" >
+                    </label>
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            Почтовый адрес пользователя
+                        </div>
+                        <input type="email" name="email" placeholder="mail@mail.com" >
+                    </label>
+                </div>
+                <!-- items 2 -->
+                <div class="modal_items flex column">
+                    
+                    <ul class="modal_items_lists">
+                        <div class="item_title">Информация о заказе</div>
+                        <li><span>Заказ</span><span>№4285232</span></li>
+                        <li><span>Дата создания</span><span>25.03.2024</span></li>
+                        <li><span>Дата сдачи</span><span>25.03.2024</span></li>
+                        <li><span>Статус заказа</span><span class="active">В работе</span></li>
+                        <li><span>Название ТЦ, откуда заказ</span><span>
+                            Название ТЦ, откуда заказ
+                        Торговый центр “Мебель Плаза” ( <a href="">ул. Баранова, 87, Ижевск</a>
+                        )
+                        </span></li>
+                        <li><span>Детали заказа</span><span>Требует в сборке, дополнительные стяжки и окрашивание по желанию мастера</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal_footer flex a_center ">
+                <button type="reset">Отменить</button>
+                <button type="submit">Создать заказ</button>
+            </div>
+        </form>
+    </div>
+    <!-- delete -->
+    <div class="modal " id="delete_modal">
+        <form class="modal_content">
+            <div class="modal_header flex a_end end">
+                <span  class="exit_edit modal_exit">&times;</span>
+            </div>
+            <div class="modal_body flex column a_center">
+                <img src="./assets/images/delete_x.svg" alt="">
+                <div class="delete_text flex column a_center">
+                    <div class="delete_title">Подтвердите удаление выбранных элементов 3</div>
+                    <div class="delete_subtitle">Если вы удалите выбранные элементы, вернуть их будет невозможно</div>
+                </div>
+            </div>
+            <div class="modal_footer flex a_center a_center ">
+                <button type="reset">Отменить</button>
+                <button type="submit">Удалить</button>
+            </div>
+        </form>
+    </div>
+    <!-- status_modal -->
+    <div class="modal" id="status">
+        <form class="modal_content">
+            <div class="modal_header flex a_center between">
+                <div class="modal_title">
+                    <h2>Выбрать статус<span class="edit_title_sm">3 объекта</span></h2>
+                </div>
+                <div class="modal_btns_gorup flex a_center">
+                    <a href="" class="flex a_center center  trash_modal">
+                        <img src="./assets/images/trash_icon.svg" class="" alt="">
+                    </a>
+                    <span  class="exit_edit modal_exit">&times;</span>
+                </div>
+            </div>
+            <div class="modal_body flex column a_center">
+                <div class="status_options">
+                    <label class="status_option">
+                      <input type="radio" name="status" value="new" />
+                      
+                      <span class="status_circle new"></span>
+                      <span class="status_text">
+                        Отметить "как новые"
+                        <small>Если выбрать данный статус - заказы будут отмечены как новый, возможно этапы которые прошёл заказ буду сброшены</small>
+                      </span>
+                    </label>
+                  
+                    <label class="status_option">
+                      <input type="radio" name="status" value="in_work" />
+                      <span class="status_circle in_work"></span>
+                      <span class="status_text">
+                        Отметить как "в работе"
+                        <small>Статус заказа изменится на "в работе".</small>
+                      </span>
+                    </label>
+                  
+                    <label class="status_option">
+                      <input type="radio" name="status" value="paused" />
+                      <span class="status_circle paused"></span>
+                      <span class="status_text">
+                        Отметить как "приостановлено"
+                        <small>Если выбрать данный статус, то выбранные заказы будут приостановлены</small>
+                      </span>
+                    </label>
+                  
+                    <label class="status_option">
+                      <input type="radio" name="status" value="archived" />
+                      <span class="status_circle archived"></span>
+                      <span class="status_text">
+                        Отправить в архив
+                        <small>Выбранные заказы будут отправлены в архив, вернуть заказ из архива невозможно, история этапов заказов будут сохранены</small>
+                      </span>
+                    </label>
+                  </div>
+                  
+            </div>
+            <div class="modal_footer flex a_center a_center ">
+                <button type="reset">Отменить</button>
+                <button type="submit">Удалить</button>
+            </div>
+        </form>
+    </div>
+    <div class="toastfy flex a_center ">
+        <img src="assets/images/check_toast.svg" alt="">
+        <span>Заказ успешно создан</span>
+        <div class="toast_exit">&times;</div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

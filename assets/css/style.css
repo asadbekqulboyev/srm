@@ -324,7 +324,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  /* 171.429% */
   letter-spacing: -0.084px;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -1941,6 +1940,27 @@
   font-style: normal;
   font-weight: 600;
   margin-top: 6px;
+}
+
+.works span.active {
+  width: fit-content;
+  padding: 0px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 36px;
+  gap: 6px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.works span.active .icon_online {
+  background: #22C55E;
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+}
+.works tbody tr td:nth-child(6) {
+  width: auto !important;
 }
 
 body {

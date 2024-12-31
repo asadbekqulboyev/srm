@@ -1464,6 +1464,7 @@
   overflow: hidden;
   opacity: 0;
   padding-left: 16px;
+  min-width: 290px;
   padding-right: 16px;
   background: #FFF;
   transition: all 0.2s linear;

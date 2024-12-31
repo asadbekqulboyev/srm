@@ -242,8 +242,12 @@ document.querySelectorAll('.wrapper button[type=submit]').forEach((sendBtn) => {
 });
 
 // check modal
-let check_form = document.querySelector('#check_form')
-let check = document.querySelector('#check')
+let check_form = document.querySelector('#check_form'),
+check_form2 = document.querySelector('#check_form2')
+check = document.querySelector('#check')
+alink = document.querySelectorAll('.check_form_table a')
+console.log(alink);
+
 if(check){
   check.onclick = function(e) {
     e.preventDefault()
@@ -256,5 +260,23 @@ window.onclick = function(e){
   if (e.target !== check && !check.contains(e.target) && !check_form.contains(e.target)){
     check_form.classList.remove('show');
   }
-}
+  
+
+}  
+alink.forEach(function(links){
+  console.log(links)
+if(check_form2){
+
+    links.onclick = function(e){
+      e.preventDefault()
+      
+      links.classList.remove('active_yellow')
+      links.classList.add('active_yellow')
+      check_form2.classList.add('show')
+      check_form2.style.left=e.clientX+25+'px'
+      check_form2.style.top=e.clientY+25+'px'
+    }}
+  
+  })
+
 }

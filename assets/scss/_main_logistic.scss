@@ -1,5 +1,76 @@
+@font-face {
+    font-family: "Heading Pro Medium" !important;
+    src: url(../fonts/Heading-Pro-Bold-Italic-trial.ttf);
+}
+
 .main_logistic {
     overflow: auto;
+
+    &.logistic_sm {
+
+
+        a {
+            width: fit-content;
+            min-width: 56px;
+            position: relative;
+            span.date {
+
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                color: #000;
+                opacity:
+                    1;
+            }
+
+            &.red {
+                background: red;
+                position: relative;
+
+                .info {
+                    position: absolute;
+                    top: -8px;
+                    right: -6px;
+                    background: #F00;
+                    width: 17px;
+                    height: 17px;
+                    border: 1px solid rgba(255, 255, 255, 0.50);
+                    border-radius: 50%;
+                    display: flex;
+                    color: #FFF;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    -webkit-text-stroke-width: 0.6296296119689941;
+                    -webkit-text-stroke-color: rgba(255, 255, 255, 0.50);
+                    font-size: 9.444px;
+                    font-weight: 700;
+                    letter-spacing: -0.104px;
+                }
+            }
+            .info {
+                position: absolute;
+                top: -8px;
+                right: -6px;
+                background: #F00;
+                width: 17px;
+                height: 17px;
+                border: 1px solid rgba(255, 255, 255, 0.50);
+                border-radius: 50%;
+                display: flex;
+                color: #FFF;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                -webkit-text-stroke-width: 0.6296296119689941;
+                -webkit-text-stroke-color: rgba(255, 255, 255, 0.50);
+                font-size: 9.444px;
+                font-weight: 700;
+                letter-spacing: -0.104px;
+            }
+        }
+
+    }
 
     .menu_lists {
         padding: 14px 14px 19px;
@@ -71,6 +142,7 @@
         overflow-x: auto;
         min-width: 1960px;
         padding-left: 12px;
+
         .title_table {
             font-size: 13px;
             font-style: normal;
@@ -186,11 +258,13 @@
         background: #FFF;
         transition: all .2s linear;
         box-shadow: 0px 152px 43px 0px rgba(0, 0, 0, 0.00), 0px 97px 39px 0px rgba(0, 0, 0, 0.01), 0px 55px 33px 0px rgba(0, 0, 0, 0.05), 0px 24px 24px 0px rgba(0, 0, 0, 0.09), 0px 6px 13px 0px rgba(0, 0, 0, 0.10);
-        &.show{
-            height:auto;
+
+        &.show {
+            height: auto;
             border-color: #E6E6E6;
             opacity: 1;
         }
+
         .status_options {
             .status_option {
                 display: flex;
@@ -255,6 +329,128 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.check_form#check_form2 {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    position: fixed;
+    z-index: 1212;
+    top: 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    min-width: 338px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: #FFF;
+    transition: all .2s linear;
+    box-shadow: 0px 152px 43px 0px rgba(0, 0, 0, 0.00), 0px 97px 39px 0px rgba(0, 0, 0, 0.01), 0px 55px 33px 0px rgba(0, 0, 0, 0.05), 0px 24px 24px 0px rgba(0, 0, 0, 0.09), 0px 6px 13px 0px rgba(0, 0, 0, 0.10);
+
+    &.show {
+        height: auto;
+        border-color: #E6E6E6;
+        opacity: 1;
+    }
+
+    .status_options {
+        width: 100%;
+
+        .title_options {
+            padding-top: 16px;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            color: #00000065;
+
+            span:first-child {
+                color: #000;
+            }
+        }
+
+        .status_option {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            border-bottom: 1px solid #E6E6E6;
+            padding: 10px 0;
+            cursor: pointer;
+
+            input {
+                visibility: hidden;
+                position: absolute;
+            }
+
+            input~img {
+                display: none;
+
+            }
+
+            input:checked~img {
+                display: block;
+                position: absolute;
+                left: 16px;
+                z-index: 12;
+            }
+
+            .status_circle {
+                position: relative;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background: #FFEC5B;
+                // border: 1px solid transparent;
+            }
+
+            .status_text {
+                font-style: normal;
+                font-weight: 600;
+                color: rgba(0, 0, 0, 1);
+
+                small {
+                    display: block;
+                    color: rgba(0, 0, 0, 0.80);
+
+                    font-family: Inter;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+            }
+
+            .icon {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 9px;
+
+                span {
+                    text-transform: uppercase;
+                    position: absolute;
+                    font-family: "Bebas Neue";
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+
+}
+
+.check_form_table {
+    tr {
+        a {
+            border: 2.5px solid transparent;
+            transition: all .2s linear;
+        }
+
+        .active_yellow {
+            border: 2.5px solid #000;
+            background: #FFEC5B;
         }
     }
 }

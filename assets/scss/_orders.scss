@@ -1,0 +1,127 @@
+.orders {
+    margin-top: 16px;
+
+    .order_items {
+        gap: 12px 0;
+    }
+
+    .order_item_contents {
+        border-radius: 8px;
+        padding: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        width: calc(50% - 8px);
+        transition: all .2s linear;
+
+        &:hover {
+            border: 1px solid #3B82F6;
+            background: #EFF6FF;
+            .check{
+                background: #EFF6FF !important;
+            }
+        }
+
+        .order_item_content_top {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            gap: 10px;
+
+            .active {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                flex: 0 0 auto;
+                background: #14B8A6;
+            }
+
+            .dates {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.50);
+            }
+        }
+
+        .order_title {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            margin-top: 6px;
+        }
+
+        .order_items_contents {
+            margin-top: 11px;
+            width: 100%;
+
+            .order_item_info {
+                width: 100%;
+                border-top: 1px solid rgba(0, 0, 0, 0.10);
+                position: relative;
+
+                &.active {
+                    border-color: #3B82F6;
+
+                    .check {
+                        position: absolute;
+                        background: #fff;
+                        top: -5px;
+                        left: 0;
+                        padding: 0 3px;
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    top: -4px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: rgb(211, 211, 211);
+                }
+
+                &.process {
+
+                    &::before {
+                        box-sizing: border-box;
+                        border: 2px solid #3B82F6;
+                        background: rgb(255, 255, 255);
+                    }
+                }
+
+                .order_date {
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.50);
+                    margin-top: 8px;
+                }
+
+                .order_title {
+                    margin-top: 2px;
+                }
+
+                .order_title_sm {
+                    margin-top: 2px;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                }
+
+                li {
+                    list-style: none;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+
+                    a {
+                        color: rgba(0, 0, 0, 0.50);
+                        text-decoration: none;
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

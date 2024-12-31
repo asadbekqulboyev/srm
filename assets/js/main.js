@@ -279,4 +279,21 @@ if(check_form2){
   
   })
 
-}
+} 
+ const tabs = document.querySelectorAll('.tab');
+  const contentSections = document.querySelectorAll('.content-section');
+
+  tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+          // Remove active class from all tabs
+          tabs.forEach(t => t.classList.remove('active'));
+          // Add active class to clicked tab
+          tab.classList.add('active');
+
+          // Hide all content sections
+          contentSections.forEach(section => section.classList.remove('active'));
+          // Show the target content section
+          const target = document.getElementById(tab.dataset.target);
+          target.classList.add('active');
+      });
+  });

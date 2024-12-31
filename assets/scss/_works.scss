@@ -7,8 +7,9 @@
         gap: 6px;
 
         font-size: 14px;
-font-style: normal;
-font-weight: 400;
+        font-style: normal;
+        font-weight: 400;
+
         .icon_online {
             background: #22C55E;
             width: 8px;
@@ -23,7 +24,6 @@ font-weight: 400;
         tr {
             td {
                 &:nth-child(6) {
-
                     width: auto !important;
                 }
 

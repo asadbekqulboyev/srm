@@ -35,7 +35,7 @@
       <span class="exit_edit modal_exit">&times;</span>
     </div>
   </header>
-  <main class="main_logistic logistic_sm">
+  <main class="main_logistic logistic_sm ">
     <ul class="menu_lists flex">
       <li>
         <a href="" class="flex a_center" id="check">
@@ -202,7 +202,7 @@
         </ul>
       </li>
     </ul>
-    <table class="check_form_table">
+    <table class="check_form_table check_form3">
       <thead>
         <tr>
           <th>
@@ -1894,52 +1894,148 @@
     </table>
   </main>
   </div>
-  
 
-  <div class="check_form " id="check_form2">
+
+<div class="modal show new_modal">
+  <div class="check_form " id="check_formst">
     <form class="modal_content">
       <div class="modal_body flex column a_center">
           <div class="status_options">
-            <div class="title_options">Цех дерева / <span>Раскрой</span>
+            <div class="status_options_top flex between a_end top">
+              <div class="flex a_center">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g opacity="0.6">
+                      <path d="M11 6.5L5.5 12M5.5 12L11 17.5M5.5 12H20" stroke="black" stroke-width="2"/>
+                    </g>
+                  </svg>
+                </div>
+                <div class="flex column">
+                  <span>Цех дерева / Раскройные станки</span>
+                  <div class="title_options">Раскройный станок №1</div>
+                </div>
               </div>
-              <label class="status_option">
-                <input type="checkbox" name="check" value="new"  />
-                <img src="./assets/images/check_green.svg" alt="">
-                <span class="status_circle new"></span>
-                <span class="status_text">
-                  Станок №1
-                  <small>Описание проблемы</small>
-                </span>
-              </label>
-              <label class="status_option">
-                <input type="checkbox" name="check" value="new" checked />
-                <img src="./assets/images/check_green.svg" alt="">
-                <span class="status_circle new"></span>
-                <span class="status_text">
-                Станок №2
-                  <small>Задача выполнена</small>
-                </span>
-              </label>
-              <label class="status_option">
-                <input type="checkbox" name="check" value="new"  />
-                <img src="./assets/images/check_green.svg" alt="">
-                <span class="status_circle new"></span>
-                <span class="status_text">
-                  Станок №3
-                  <small>Описание проблемы</small>
-                </span>
-              </label>
-              <label class="status_option">
-                <input type="checkbox" name="check" value="new" checked />
-                <img src="./assets/images/check_green.svg" alt="">
-                <span class="status_circle new"></span>
-                <span class="status_text">
-                Станок №2
-                  <small>Задача выполнена</small>
-                </span>
-              </label>
+               <div class="date_status">24 марта, 10:00 — 29 марта 2024, 18:00</div>
             </div>
-            
+              <div class="flex between a_center status_option_top first">
+                <label class="status_option">
+                  <span class="status_circle new"></span>
+                  <span class="status_text">Станок №1, Антон Макаренко:  <br> Тумба прикроватная, 25 шт
+                    <small>Нужна замена запчасти, есть задержки в поставке </small>
+                  </span>
+                </label>
+                <a href="">Комментарии, 3</a>
+              </div>
+              <div class="status_options_item flex column">
+                <div class="status_items_top_title flex between a_center">
+                  <h2>Специалист Кондратьев Ж. Г.</h2>
+                  <span>24 марта 12:43</span>
+                </div>
+                <p class="description">
+                  У станка вышел из строя неразборчиво написано о детали в пару строчек чтобы просто показать это в дизайне 
+                </p>
+                <div class="bars">
+                  <div class="bars_thumb"></div>
+                </div>
+              </div>
+              <div class="status_options_item flex column">
+                <div class="status_items_top_title flex between a_center">
+                  <h2>Мастер цеха Черепанов А. Д.</h2>
+                  <span>24 марта 12:43</span>
+                </div>
+                <p class="description">
+                  А нельзя поменять эту неразборчиво написано о детали на аналогичную от неработающего станка №7?</p>
+                <div class="bars">
+                  <div class="bars_thumb"></div>
+                </div>
+              </div>
+              <div class="status_options_item flex column">
+                <div class="status_items_top_title flex between a_center">
+                  <h2>Специалист Кондратьев Ж. Г.</h2>
+                  <span>24 марта 12:43</span>
+                </div>
+                <p class="description">
+                  Нельзя, там степень износа большая 
+                </p>
+                <div class="bars">
+                  <div class="bars_thumb"></div>
+                </div>
+              </div>
+              <div class="status_options_item flex column">
+                <div class="status_items_top_title flex between a_center">
+                  <h2>Мастер цеха Черепанов А. Д. <br> устанавливает статус «проблемы»<h2>
+                  <span>24 марта 12:43</span>
+                </div>
+                <p class="description">
+                <span class="icon"></span>  Нельзя, там степень износа большая 
+                </p>
+                <div class="bars">
+                  <div class="bars_thumb"></div>
+                </div>
+              </div>
+              <div class="form_bottoms">
+                <a href="">Написать комментарий</a>
+              </div>
+            </div>
+      </div>
+  </form>
+  </div>
+</div>
+  <div class="check_form " id="check_form3">
+    <form class="modal_content">
+      <div class="modal_body flex column a_center">
+          <div class="status_options">
+            <div class="status_options_top flex between a_center">
+              <div class="flex column">
+                <span>Раскрой</span>
+                <div class="title_options">Раскройные станки
+              </div>
+              </div>
+               <div class="date_status">24 марта, 10:00 — 29 марта 2024, 18:00</div>
+              </div>
+              <div class="flex between a_center check_option">
+                <label class="status_option">
+                  <input type="checkbox" name="check" value="new"  />
+                  <img src="./assets/images/check_green.svg" alt="">
+                  <span class="status_circle new"></span>
+                  <span class="status_text">Станок №1, Антон Макаренко:  <br> Тумба прикроватная, 25 шт
+                    <small>Нужна замена запчасти, есть задержки в поставке </small>
+                  </span>
+                </label>
+                <a href="">Комментарии, 3</a>
+              </div>
+              <div class="flex between a_center check_option">
+                <label class="status_option">
+                  <input type="checkbox" name="check" value="new"  checked/>
+                  <img src="./assets/images/check_green.svg" alt="">
+                  <span class="status_circle new"></span>
+                  <span class="status_text">Станок №2, Денис Передовой: Стол, 15 шт
+                    <small>Выполняет задачу </small>
+                  </span>
+                </label>
+              </div>
+              <div class="flex between a_center check_option red">
+                <label class="status_option">
+                  <input type="checkbox" name="check" value="new"  />
+                  <img src="./assets/images/check_green.svg" alt="">
+                  <span class="status_circle new"></span>
+                  <span class="status_text">Станок №3, Константин Широкополов: <br> Журнальный столик, 25 шт
+                    <small>Нужна замена запчасти, есть задержки в поставке </small>
+                  </span>
+                </label>
+                <a href="">Комментарии, 3</a>
+              </div>
+              <div class="flex between a_center check_option">
+                <label class="status_option">
+                  <input type="checkbox" name="check" value="new"  checked/>
+                  <img src="./assets/images/check_green.svg" alt="">
+                  <span class="status_circle new"></span>
+                  <span class="status_text">Станок №4, Михаил Уфимский: Шифоньерка, 9 шт
+                    <small>Выполняет задачу </small>
+                  </span>
+                </label>
+              </div>
+            </div>
       </div>
   </form>
   </div>

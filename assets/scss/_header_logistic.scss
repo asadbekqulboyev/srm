@@ -2,7 +2,11 @@
     width: 100%;
     padding: 16px 26px 16px 16px;
     border-bottom: 1px solid #E6E6E6;
-
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 676;
+    background: #fff;
     .header_left {
         gap: 32px;
 
@@ -19,11 +23,36 @@
             color: rgba(0, 0, 0, 0.50);
             padding-left: 6px;
         }
-        p{
+
+        p {
             font-size: 16px;
-font-style: normal;
-font-weight: 600;
+            font-style: normal;
+            font-weight: 600;
         }
+    }
+
+    .progress {
+        gap: 10px;
+        .progress_sums {
+            color: #3FC14D;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+        }
+        .progressbar{
+            width: 126px;
+            height: 10px;
+            border-radius: 29px;
+            background: #EFEFEF;
+            .progress_thumb{
+                width: 65%;
+                height: 100%;
+                background: #3FC14D;
+                border-radius: 29px;
+            }
+        }
+
     }
 
     .modal_btns_gorup {

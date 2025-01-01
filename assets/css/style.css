@@ -1193,6 +1193,11 @@
   width: 100%;
   padding: 16px 26px 16px 16px;
   border-bottom: 1px solid #E6E6E6;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 676;
+  background: #fff;
 }
 .logistic_header .header_left {
   gap: 32px;
@@ -1213,6 +1218,28 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
+}
+.logistic_header .progress {
+  gap: 10px;
+}
+.logistic_header .progress .progress_sums {
+  color: #3FC14D;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.logistic_header .progress .progressbar {
+  width: 126px;
+  height: 10px;
+  border-radius: 29px;
+  background: #EFEFEF;
+}
+.logistic_header .progress .progressbar .progress_thumb {
+  width: 65%;
+  height: 100%;
+  background: #3FC14D;
+  border-radius: 29px;
 }
 .logistic_header .modal_btns_gorup {
   gap: 8px;
@@ -1254,7 +1281,9 @@
   src: url(../fonts/Heading-Pro-Bold-Italic-trial.ttf);
 }
 .main_logistic {
-  overflow: auto;
+  overflow-x: auto;
+  min-width: 2400px;
+  padding-top: 70px;
 }
 .main_logistic.logistic_sm a {
   width: fit-content;
@@ -1529,7 +1558,8 @@
   font-weight: 700;
 }
 
-.check_form#check_form2 {
+.check_form#check_form2,
+.check_form#check_form3 {
   border-radius: 8px;
   border: 1px solid transparent;
   position: fixed;
@@ -1546,25 +1576,65 @@
   transition: all 0.2s linear;
   box-shadow: 0px 152px 43px 0px rgba(0, 0, 0, 0), 0px 97px 39px 0px rgba(0, 0, 0, 0.01), 0px 55px 33px 0px rgba(0, 0, 0, 0.05), 0px 24px 24px 0px rgba(0, 0, 0, 0.09), 0px 6px 13px 0px rgba(0, 0, 0, 0.1);
 }
-.check_form#check_form2.show {
+.check_form#check_form2.show,
+.check_form#check_form3.show {
   height: auto;
   border-color: #E6E6E6;
   opacity: 1;
 }
-.check_form#check_form2 .status_options {
+.check_form#check_form2 .status_options,
+.check_form#check_form3 .status_options {
   width: 100%;
 }
-.check_form#check_form2 .status_options .title_options {
+.check_form#check_form2 .status_options .status_options_top,
+.check_form#check_form3 .status_options .status_options_top {
+  padding: 21px 4px;
+  gap: 0 114px;
+}
+.check_form#check_form2 .status_options .status_options_top.top,
+.check_form#check_form3 .status_options .status_options_top.top {
+  gap: 0;
+}
+.check_form#check_form2 .status_options .status_options_top.top span,
+.check_form#check_form3 .status_options .status_options_top.top span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+.check_form#check_form2 .status_options .status_options_top .flex,
+.check_form#check_form3 .status_options .status_options_top .flex {
+  gap: 4px 0;
+}
+.check_form#check_form2 .status_options .status_options_top .flex span,
+.check_form#check_form3 .status_options .status_options_top .flex span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+.check_form#check_form2 .status_options .status_options_top .flex .title_options,
+.check_form#check_form3 .status_options .status_options_top .flex .title_options {
+  padding-top: 0;
+}
+.check_form#check_form2 .status_options .status_options_top .date_status,
+.check_form#check_form3 .status_options .status_options_top .date_status {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+.check_form#check_form2 .status_options .title_options,
+.check_form#check_form3 .status_options .title_options {
   padding-top: 16px;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.3960784314);
 }
-.check_form#check_form2 .status_options .title_options span:first-child {
+.check_form#check_form2 .status_options .title_options span:first-child,
+.check_form#check_form3 .status_options .title_options span:first-child {
   color: #000;
 }
-.check_form#check_form2 .status_options .status_option {
+.check_form#check_form2 .status_options .status_option,
+.check_form#check_form3 .status_options .status_option {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -1572,32 +1642,38 @@
   padding: 10px 0;
   cursor: pointer;
 }
-.check_form#check_form2 .status_options .status_option input {
+.check_form#check_form2 .status_options .status_option input,
+.check_form#check_form3 .status_options .status_option input {
   visibility: hidden;
   position: absolute;
 }
-.check_form#check_form2 .status_options .status_option input ~ img {
+.check_form#check_form2 .status_options .status_option input ~ img,
+.check_form#check_form3 .status_options .status_option input ~ img {
   display: none;
 }
-.check_form#check_form2 .status_options .status_option input:checked ~ img {
+.check_form#check_form2 .status_options .status_option input:checked ~ img,
+.check_form#check_form3 .status_options .status_option input:checked ~ img {
   display: block;
   position: absolute;
   left: 16px;
   z-index: 12;
 }
-.check_form#check_form2 .status_options .status_option .status_circle {
+.check_form#check_form2 .status_options .status_option .status_circle,
+.check_form#check_form3 .status_options .status_option .status_circle {
   position: relative;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background: #FFEC5B;
 }
-.check_form#check_form2 .status_options .status_option .status_text {
+.check_form#check_form2 .status_options .status_option .status_text,
+.check_form#check_form3 .status_options .status_option .status_text {
   font-style: normal;
   font-weight: 600;
   color: rgb(0, 0, 0);
 }
-.check_form#check_form2 .status_options .status_option .status_text small {
+.check_form#check_form2 .status_options .status_option .status_text small,
+.check_form#check_form3 .status_options .status_option .status_text small {
   display: block;
   color: rgba(0, 0, 0, 0.8);
   font-family: Inter;
@@ -1605,18 +1681,355 @@
   font-style: normal;
   font-weight: 400;
 }
-.check_form#check_form2 .status_options .status_option .icon {
+.check_form#check_form2 .status_options .status_option .icon,
+.check_form#check_form3 .status_options .status_option .icon {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 9px;
 }
-.check_form#check_form2 .status_options .status_option .icon span {
+.check_form#check_form2 .status_options .status_option .icon span,
+.check_form#check_form3 .status_options .status_option .icon span {
   text-transform: uppercase;
   position: absolute;
   font-family: "Bebas Neue";
   font-weight: 700;
+}
+.check_form#check_form2 .status_options .check_option,
+.check_form#check_form3 .status_options .check_option {
+  gap: 24px;
+  border-top: 0.75px solid #E6E6E6;
+  padding: 15px 0;
+}
+.check_form#check_form2 .status_options .check_option.red .status_circle,
+.check_form#check_form3 .status_options .check_option.red .status_circle {
+  background: #FF5B5B;
+}
+.check_form#check_form2 .status_options .check_option .status_option,
+.check_form#check_form3 .status_options .check_option .status_option {
+  padding: 0;
+  border: 0;
+}
+.check_form#check_form2 .status_options .check_option .status_text,
+.check_form#check_form3 .status_options .check_option .status_text {
+  font-size: 14px;
+  font-weight: 600;
+}
+.check_form#check_form2 .status_options .check_option .status_text small,
+.check_form#check_form3 .status_options .check_option .status_text small {
+  margin-top: 5px;
+}
+.check_form#check_form2 .status_options .check_option a,
+.check_form#check_form3 .status_options .check_option a {
+  border-radius: 6px;
+  background: #F1F1F1;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+}
+.check_form#check_form2 .status_options .status_option_top.first,
+.check_form#check_form3 .status_options .status_option_top.first {
+  border-bottom: 0;
+}
+.check_form#check_form2 .status_options .status_option_top,
+.check_form#check_form3 .status_options .status_option_top {
+  border-radius: 8px;
+  background: #F6F3D7;
+  padding: 14px 16px 14px;
+}
+.check_form#check_form2 .status_options .status_option_top label,
+.check_form#check_form3 .status_options .status_option_top label {
+  border-bottom: 0;
+  padding: 0;
+  border: 0;
+}
+.check_form#check_form2 .status_options .status_option_top a,
+.check_form#check_form3 .status_options .status_option_top a {
+  padding: 10px 16px;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #fff;
+  display: inline-block;
+  color: #000;
+  border-radius: 6px;
+}
+.check_form#check_form2 .status_options .check_options_item,
+.check_form#check_form3 .status_options .check_options_item {
+  gap: 10px;
+}
+.check_form#check_form2 .status_options_item,
+.check_form#check_form3 .status_options_item {
+  padding: 20px 0 16px;
+  gap: 10px 0;
+}
+.check_form#check_form2 .status_options_item .status_items_top_title h2,
+.check_form#check_form3 .status_options_item .status_items_top_title h2 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.check_form#check_form2 .status_options_item .status_items_top_title span,
+.check_form#check_form3 .status_options_item .status_items_top_title span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+.check_form#check_form2 .status_options_item .description,
+.check_form#check_form3 .status_options_item .description {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.check_form#check_form2 .status_options_item .bars,
+.check_form#check_form3 .status_options_item .bars {
+  width: 100%;
+  margin-top: 6px;
+}
+.check_form#check_form2 .status_options_item .bars .bars_thumb,
+.check_form#check_form3 .status_options_item .bars .bars_thumb {
+  border-radius: 14px;
+  background: #A7F3AF;
+  width: 20%;
+  height: 3px;
+}
+
+.check_form#check_form3 {
+  min-width: 590px;
+}
+
+.new_modal #check_formst {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute !important;
+  height: fit-content;
+  width: fit-content;
+  min-height: fit-content;
+  z-index: 1212321342;
+  display: block;
+  opacity: 1 !important;
+}
+.new_modal #check_formst .modal_content {
+  display: block;
+  height: fit-content;
+  min-width: 511px;
+}
+.new_modal #check_formst .modal_content .description {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.new_modal #check_formst .modal_content .description .icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  background: #FFEC5B;
+}
+.new_modal #check_formst .form_bottoms {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 20px;
+}
+.new_modal #check_formst .form_bottoms a {
+  border-radius: 6px;
+  font-size: 11px;
+  font-style: normal;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px 14px;
+  background: #A7F3AF;
+}
+.new_modal #check_formst .status_options {
+  width: 100%;
+}
+.new_modal #check_formst .status_options .status_options_top {
+  padding: 21px 4px;
+  gap: 0 114px;
+}
+.new_modal #check_formst .status_options .status_options_top.top {
+  gap: 0;
+}
+.new_modal #check_formst .status_options .status_options_top.top span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+.new_modal #check_formst .status_options .status_options_top .flex {
+  gap: 4px 0;
+}
+.new_modal #check_formst .status_options .status_options_top .flex span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+.new_modal #check_formst .status_options .status_options_top .flex .title_options {
+  padding-top: 0;
+}
+.new_modal #check_formst .status_options .status_options_top .date_status {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+.new_modal #check_formst .status_options .title_options {
+  padding-top: 16px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3960784314);
+}
+.new_modal #check_formst .status_options .title_options span:first-child {
+  color: #000;
+}
+.new_modal #check_formst .status_options .status_option {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #E6E6E6;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.new_modal #check_formst .status_options .status_option input {
+  visibility: hidden;
+  position: absolute;
+}
+.new_modal #check_formst .status_options .status_option input ~ img {
+  display: none;
+}
+.new_modal #check_formst .status_options .status_option input:checked ~ img {
+  display: block;
+  position: absolute;
+  left: 16px;
+  z-index: 12;
+}
+.new_modal #check_formst .status_options .status_option .status_circle {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #FFEC5B;
+}
+.new_modal #check_formst .status_options .status_option .status_text {
+  font-style: normal;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+.new_modal #check_formst .status_options .status_option .status_text small {
+  display: block;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+}
+.new_modal #check_formst .status_options .status_option .icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+}
+.new_modal #check_formst .status_options .status_option .icon span {
+  text-transform: uppercase;
+  position: absolute;
+  font-family: "Bebas Neue";
+  font-weight: 700;
+}
+.new_modal #check_formst .status_options .check_option {
+  gap: 24px;
+  border-top: 0.75px solid #E6E6E6;
+  padding: 15px 0;
+}
+.new_modal #check_formst .status_options .check_option.red .status_circle {
+  background: #FF5B5B;
+}
+.new_modal #check_formst .status_options .check_option .status_option {
+  padding: 0;
+  border: 0;
+}
+.new_modal #check_formst .status_options .check_option .status_text {
+  font-size: 14px;
+  font-weight: 600;
+}
+.new_modal #check_formst .status_options .check_option .status_text small {
+  margin-top: 5px;
+}
+.new_modal #check_formst .status_options .check_option a {
+  border-radius: 6px;
+  background: #F1F1F1;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+}
+.new_modal #check_formst .status_options .status_option_top.first {
+  border-bottom: 0;
+}
+.new_modal #check_formst .status_options .status_option_top {
+  border-radius: 8px;
+  background: #F6F3D7;
+  padding: 14px 16px 14px;
+}
+.new_modal #check_formst .status_options .status_option_top label {
+  border-bottom: 0;
+  padding: 0;
+  border: 0;
+}
+.new_modal #check_formst .status_options .status_option_top a {
+  padding: 10px 16px;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #fff;
+  display: inline-block;
+  color: #000;
+  border-radius: 6px;
+}
+.new_modal #check_formst .status_options .check_options_item {
+  gap: 10px;
+}
+.new_modal #check_formst .status_options_item {
+  padding: 20px 0 16px;
+  gap: 10px 0;
+}
+.new_modal #check_formst .status_options_item .status_items_top_title h2 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.new_modal #check_formst .status_options_item .status_items_top_title span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+.new_modal #check_formst .status_options_item .description {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.new_modal #check_formst .status_options_item .bars {
+  width: 100%;
+  margin-top: 6px;
+}
+.new_modal #check_formst .status_options_item .bars .bars_thumb {
+  border-radius: 14px;
+  background: #A7F3AF;
+  width: 20%;
+  height: 3px;
 }
 
 .check_form_table tr a {

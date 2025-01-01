@@ -243,10 +243,12 @@ document.querySelectorAll('.wrapper button[type=submit]').forEach((sendBtn) => {
 
 // check modal
 let check_form = document.querySelector('#check_form'),
-check_form2 = document.querySelector('#check_form2')
+check_form2 = document.querySelector('#check_form2'),
+check_form3 = document.querySelector('#check_form3')
 check = document.querySelector('#check')
 alink = document.querySelectorAll('.check_form_table a')
-console.log(alink);
+alink2 = document.querySelectorAll('.check_form3 a')
+
 
 if(check){
   check.onclick = function(e) {
@@ -263,20 +265,34 @@ window.onclick = function(e){
   
 
 }  
+alink2.forEach(function(links){
+if(check_form3){
+    links.onclick = function(e){
+      e.preventDefault()
+      links.classList.remove('active_yellow')
+      links.classList.add('active_yellow')
+      check_form3.classList.add('show')
+      check_form3.style.left=e.clientX+25+'px'
+      check_form3.style.top=e.clientY+25+'px'
+
+    }}
+  })
 alink.forEach(function(links){
   console.log(links)
 if(check_form2){
 
     links.onclick = function(e){
       e.preventDefault()
-      
       links.classList.remove('active_yellow')
       links.classList.add('active_yellow')
       check_form2.classList.add('show')
       check_form2.style.left=e.clientX+25+'px'
       check_form2.style.top=e.clientY+25+'px'
+      check_form3.classList.add('show')
+      check_form3.style.left=e.clientX+25+'px'
+      check_form3.style.top=e.clientY+25+'px'
+
     }}
-  
   })
 
 } 

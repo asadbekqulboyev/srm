@@ -1,5 +1,118 @@
-.dashboard{
-    .dashboard_items{
+.dashboard {
+    .dashboard_items {
+        .dashboard_item {
+
+            background: #d9d9d942;
+        }
+
         // gap: ;
+        .dashbor_header_lists {
+            justify-content: flex-start;
+            gap: 0 32px;
+
+            .dashbor_header_item {
+                gap: 17px 0;
+                padding: 15px 12px;
+                width: 107px;
+
+                &.first {
+                    width: 490px;
+                }
+
+                .dashboard_header_title {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    min-width: 178px;
+                }
+
+                .dashboard_header_sm_title {
+                    color: rgba(0, 0, 0, 0.50);
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+
+                .dachboard_date {
+                    color: #000;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                }
+
+                .dashboard_text {
+                    font-size: 14px;
+                    font-style: normal;
+                    color: #16A34A;
+                    margin-top: 4px;
+                    font-weight: 500;
+                }
+
+                .progress {
+                    width: 100%;
+                    height: 4px;
+                    background: #E5E7EB;
+
+                    .progress_thumb {
+                        height: 100%;
+                        width: 20%;
+                        background: #22C55E;
+                    }
+
+                    &.orange {
+                        .progress_thumb {
+                            background: #F59E0B;
+                        }
+                    }
+
+                    &.red {
+                        .progress_thumb {
+                            background: #EF4444;
+                        }
+                    }
+                }
+
+                &:first-child {
+                    .dashboard_count {
+                        font-size: 40px;
+                        font-style: normal;
+                        color: #16A34A;
+                        font-weight: 600;
+                    }
+                }
+
+                &:last-child {
+                    width: 112px;
+                    margin-left: auto;
+
+                    .progress_text {
+                        color: #22C55E;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+        }
+
+        .dashboard_child {
+            height: 0;
+            overflow: hidden;
+            transition: all .2s linear;
+            border-top: 1px solid transparent;
+            opacity: 0;
+
+            &.active {
+                opacity: 1;
+                overflow: auto;
+                height: max-content;
+                border-color: #E5E7EB;
+            }
+
+            .dashbor_header_item:last-child {
+                margin-left: 0;
+            }
+        }
     }
 }

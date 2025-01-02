@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Динамическая таблица</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .table-container {
+            width: 95%;
+            margin: 20px auto;
+            background: #ffffff;
+            border: 1px solid #dcdfe6;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 20px;
+            text-align: left;
+            border-bottom: 1px solid #e4e7ed;
+        }
+        th {
+            background-color: #f9fafc;
+            font-weight: 600;
+            color: #606266;
+        }
+        tr.parent-row {
+            cursor: pointer;
+            background-color: #fdfdfd;
+            transition: background-color 0.3s;
+        }
+        tr.parent-row:hover {
+            background-color: #f2f6fc;
+        }
+        tr.child-row {
+            display: none;
+            background-color: #fafbfc;
+        }
+        .status {
+            font-weight: 600;
+            color: #67c23a;
+        }
+        .status.warning {
+            color: #e6a23c;
+        }
+        .status.error {
+            color: #f56c6c;
+        }
+        .child-row table {
+            margin-top: 10px;
+        }
+        .child-row th, .child-row td {
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Название</th>
+                <th>Дата планирования</th>
+                <th>Количество</th>
+                <th>Статус</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="parent-row">
+                <td>953</td>
+                <td>Молекула</td>
+                <td>17.05.23</td>
+                <td>716</td>
+                <td class="status">89%</td>
+            </tr>
+            <tr class="child-row">
+                <td colspan="5">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Подэлемент</th>
+                                <th>Деревообработка</th>
+                                <th>Металлообработка</th>
+                                <th>Покраска</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>953.1 Стол</td>
+                                <td>90%</td>
+                                <td>87%</td>
+                                <td>83%</td>
+                            </tr>
+                            <tr>
+                                <td>953.2 Стул</td>
+                                <td>88%</td>
+                                <td>82%</td>
+                                <td>96%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr class="parent-row">
+                <td>954</td>
+                <td>Грант</td>
+                <td>23.05.23</td>
+                <td>716</td>
+                <td class="status warning">44%</td>
+            </tr>
+            <tr class="child-row">
+                <td colspan="5">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Подэлемент</th>
+                                <th>Деревообработка</th>
+                                <th>Металлообработка</th>
+                                <th>Покраска</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>954.1 Кровать</td>
+                                <td>37%</td>
+                                <td>28%</td>
+                                <td>37%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    document.querySelectorAll('.parent-row').forEach(row => {
+        row.addEventListener('click', () => {
+            const nextRow = row.nextElementSibling;
+            if (nextRow && nextRow.classList.contains('child-row')) {
+                nextRow.style.display = nextRow.style.display === 'table-row' ? 'none' : 'table-row';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

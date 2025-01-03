@@ -2648,6 +2648,165 @@
   gap: 6px;
 }
 
+.jobs_wrapper .btn {
+  width: fit-content;
+  padding: 7px 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #3B82F6;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  gap: 10px;
+  cursor: pointer;
+}
+.jobs_wrapper .sidebar {
+  width: fit-content;
+}
+.jobs_wrapper .main {
+  padding-left: 65px;
+}
+.jobs_wrapper .main .top_form {
+  color: rgba(170, 170, 170, 0.67);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.03);
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-bottom: 20px;
+}
+.jobs_wrapper .main .top_form .form_name input {
+  outline: none;
+  border: 0;
+  font-size: 32px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.062745098);
+  color: #000;
+}
+.jobs_wrapper .main .top_form .form_name input::placeholder {
+  color: rgba(0, 0, 0, 0.0784313725);
+}
+.jobs_wrapper .main .top_form div.flex {
+  gap: 0 50px;
+  margin-top: 30px;
+}
+.jobs_wrapper .main .top_form div.flex input {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: #000;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.062745098);
+  padding-bottom: 10px;
+}
+.jobs_wrapper .main .top_form div.flex input::placeholder {
+  color: rgba(0, 0, 0, 0.0784313725);
+}
+.jobs_wrapper .main .menu_jobs {
+  padding-top: 20px;
+  padding-left: 32px;
+}
+.jobs_wrapper .main .menu_jobs .blue_content {
+  color: #3B82F6;
+  font-size: 14px;
+  gap: 4px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 13px;
+  margin-top: 20px;
+}
+.jobs_wrapper .main .menu_jobs .form_btns {
+  margin-bottom: 11px;
+  gap: 12px;
+}
+.jobs_wrapper .main .menu_jobs.jobs2 {
+  padding-right: 24px;
+  border-right: 2px solid rgba(0, 0, 0, 0.03);
+  width: fit-content;
+  height: 100vh;
+}
+.jobs_wrapper .main .menu_jobs.jobs2 .title_job {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.jobs_wrapper .main .menu_jobs.jobs2 .icon {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  cursor: pointer;
+}
+.jobs_wrapper .main .menu_jobs.jobs2 .form_title {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 18px 18px 0;
+}
+.jobs_wrapper .main .menu_jobs.jobs2 .form, .jobs_wrapper .main .menu_jobs.jobs2 form {
+  gap: 10px;
+}
+.jobs_wrapper .main .menu_jobs.jobs2 li.flex {
+  min-width: 230px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 5px 18px;
+}
+.jobs_wrapper .main .menu_jobs.jobs2 li.flex span:first-child {
+  color: rgba(138, 138, 138, 0.8);
+}
+.jobs_wrapper .main .menu_jobs.jobs2 li.flex span:last-child {
+  color: rgba(0, 0, 0, 0.8);
+}
+.jobs_wrapper .main .menu_jobs .menu_jobs {
+  list-style: none;
+  border-radius: 6px;
+  position: relative;
+  border: 1px solid #E6E6E6;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  width: fit-content;
+  margin-top: 8px;
+}
+.jobs_wrapper .main .menu_jobs .menu_jobs a {
+  width: 100%;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: all 0.2s linear;
+}
+.jobs_wrapper .main .menu_jobs .menu_jobs a:hover {
+  background: #F4F4F4;
+  color: #3B82F6;
+}
+.jobs_wrapper .main .menu_jobs .menu_jobs form,
+.jobs_wrapper .main .menu_jobs .menu_jobs .form {
+  padding: 8px 13px;
+}
+.jobs_wrapper .main .menu_jobs .menu_jobs form input,
+.jobs_wrapper .main .menu_jobs .menu_jobs .form input {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  width: 100%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  padding-bottom: 6px;
+}
+.jobs_wrapper .main .info_content {
+  padding: 24px;
+}
+
 body {
   font-family: "Inter";
   color: rgba(0, 0, 0, 0.8);

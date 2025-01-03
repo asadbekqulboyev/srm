@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.svg" />
+    <title>CRM завод</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+ 
+    <div class="wrapper jobs_wrapper ">
+        <div class="sidebar">
+            <div class="top">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+                <a href="#" class="profil">
+                    <img src="assets/images/user_logo.png" alt="">
+                </a>
+                <div class="menu">
+                    <a href="#" class="item active">
+                        <div class="icon">
+                            <img src="./assets/images/menu_icon1.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="user_dashbord.html" class="item">
+                        <div class="icon">
+                            <img src="./assets/images/menu_icon2.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="icon">
+                            <img src="./assets/images/menu_icon3.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="bottom">
+                <a href="#" class="item">
+                    <img src="./assets/images/menu_icon4.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <main class="main">
+            <form class="top_form">
+                <div class="form_name">
+                    <input type="text" placeholder="Название" name="work_name">
+                </div>
+                <div class="flex a_center">
+                    <input type="text" name="from" id="" placeholder="Начало работы">
+                    <input type="text" name="from" id="" placeholder="Завершение работы">
+                </div>
+            </form>
+            <div class="flex">
+              <div class="menu_jobs jobs2">
+                <div class="title_job">
+                    Цех <br> металлообработки
+                </div>
+                <a href="" class="flex a_center center btn"><span>Выбрать цех</span><img src="assets/images/plus.svg" alt=""></a>
+                <ul class="menu_jobs flex column">
+                    <li><a href="#">Подготовка</a></li>
+                    <li><a href="#">Раскрой</a></li>
+                    <li><a href="#">Сварка</a></li>
+                    <li><a href="#">Слесарка</a></li>
+                    <li><a href="#">Покраска</a></li>
+                    <form action="">
+                        <input type="text" placeholder="Свой вариант">
+                    </form>
+                </ul>
+            </div>  
+            <div class="info_content">
+                <a href="" class="flex a_center center btn"><span>Выбрать цех</span><img src="assets/images/plus.svg" alt=""></a>
+            </div>
+            </div>
+            
+        </main>
+    </div>
+    <!-- modal big -->
+    <div class="modal" id="new_orders">
+        <form class="modal_content">
+            <div class="modal_header flex a_center between">
+                <h2>Новый пользователь</h2>
+                <span class="close_modal modal_exit">&times;</span>
+            </div>
+            <div class="modal_body flex column">
+                <!-- items 1 -->
+                <div class="modal_items flex column">
+                    <div class="item_title">Клиент</div>
+                    <!-- select 1 -->
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            *Город
+                        </div>
+                        <select name="location" id="">
+                            <option value="">Введите название города и выберите из списка</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                        <div class="sub_input_info">
+                            Для поиска города достаточно ввести первые 3 буквы
+                        </div>
+                    </label>
+                    <!-- select 2 -->
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            Приоритет
+                        </div>
+                        <select name="location" id="">
+                            <option value="">Обычный</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </label>
+                      <!-- select 3 -->
+                      <label class="input_item flex column ">
+                        <div class="input_title">
+                            *Наименование торгового центра
+                        </div>
+                        <select name="location" id="">
+                            <option value="">Наприм. “Панорама”</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                        <div class="sub_input_info">
+                            Для поиска торговой точки достаточно ввести первые 3 буквы
+                        </div>
+                    </label>
+                     <!-- input -->
+                     <label class="input_item flex column ">
+                        <div class="input_title">
+                            *Наименование клиента
+                        </div>
+                        <input type="text" placeholder="Наприм. “Том Тейлор”">
+                        <div class="sub_input_info">
+                            Для поиска торговой точки достаточно ввести первые 3 буквы
+                        </div>
+                    </label>
+                </div>
+                <!-- items 2 -->
+                <div class="modal_items flex column">
+                    <div class="item_title">Информация о заказе</div>
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            Название заказа
+                        </div>
+                        <input type="text" name="date_from"  placeholder=" №: 43178 / Россия, Москва / Панорама / Том тейлор">
+                    </label>
+                    <!-- date 1 -->
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            Дата начала проекта
+                        </div>
+                        <input type="date" name="date_from" >
+                        <div class="sub_input_info">
+                            Нажмите для выбора даты сдачи проекта
+                        </div>
+                    </label>
+                    <!-- date 2 -->
+                    <label class="input_item flex column ">
+                        <div class="input_title">
+                            Дата сдачи
+                        </div>
+                        <input type="date" name="date_from" >
+                        <div class="sub_input_info">
+                            Нажмите для выбора даты сдачи проекта
+                        </div>
+                    </label>
+                </div>
+                <!-- items 2 -->
+                <div class="modal_items flex column">
+                    <div class="item_title flex between a_center">Информация об изделиях <a href="" class="open_lists flex a_center"><img src="./assets/images/ben_btn.svg" alt=""> <span>Редактор изделий</span></a></div>
+                    <div class="info_list_content flex between wrap">
+                        <div class="info_item">
+                            <div class="info_top flex between a_center  ">
+                                <span>Изделие 1</span>
+                                <img src="./assets/images/pen.svg" alt="">
+                            </div>
+                            <ul class="info_lists flex column">
+                                <li class="flex a_center"><span>Вид изделия</span><span>Ножка</span></li>
+                                <li class="flex a_center"><span>Количество</span><span>4</span></li>
+                                <li class="flex a_center"><span>Конструктор</span><span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <div class="info_item">
+                            <div class="info_top flex between a_center  ">
+                                <span>Изделие 2</span>
+                                <img src="./assets/images/pen.svg" alt="">
+                            </div>
+                            <ul class="info_lists flex column">
+                                <li class="flex a_center"><span>Вид изделия</span><span>Ножка</span></li>
+                                <li class="flex a_center"><span>Количество</span><span>4</span></li>
+                                <li class="flex a_center"><span>Конструктор</span><span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <div class="info_item">
+                            <div class="info_top flex between a_center  ">
+                                <span>Изделие 3</span>
+                                <img src="./assets/images/pen.svg" alt="">
+                            </div>
+                            <ul class="info_lists flex column">
+                                <li class="flex a_center"><span>Вид изделия</span><span>Ножка</span></li>
+                                <li class="flex a_center"><span>Количество</span><span>4</span></li>
+                                <li class="flex a_center"><span>Конструктор</span><span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <div class="info_item">
+                            <div class="info_top flex between a_center  ">
+                                <span>Изделие 4</span>
+                                <img src="./assets/images/pen.svg" alt="">
+                            </div>
+                            <ul class="info_lists flex column">
+                                <li class="flex a_center"><span>Вид изделия</span><span>Ножка</span></li>
+                                <li class="flex a_center"><span>Количество</span><span>4</span></li>
+                                <li class="flex a_center"><span>Конструктор</span><span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <div class="info_item">
+                            <div class="info_top flex between a_center  ">
+                                <span>Изделие 5</span>
+                                <img src="./assets/images/pen.svg" alt="">
+                            </div>
+                            <ul class="info_lists flex column">
+                                <li class="flex a_center"><span>Вид изделия</span><span>Ножка</span></li>
+                                <li class="flex a_center"><span>Количество</span><span>4</span></li>
+                                <li class="flex a_center"><span>Конструктор</span><span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <div class="info_item">
+                            <div class="info_top flex between a_center  ">
+                                <span>Изделие 6</span>
+                                <img src="./assets/images/pen.svg" alt="">
+                            </div>
+                            <ul class="info_lists flex column">
+                                <li class="flex a_center"><span>Вид изделия</span><span>Ножка</span></li>
+                                <li class="flex a_center"><span>Количество</span><span>4</span></li>
+                                <li class="flex a_center"><span>Конструктор</span><span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <a href="" class="all_btn">Развернуть (+20)</a>
+                    </div>
+                </div>
+                <!-- items 1 -->
+                <div class="modal_items flex column">
+                    <div class="item_title">Дополнительная информация</div>
+                     <!-- input -->
+                     <label class="input_item flex column ">
+                        <div class="input_title">
+                            Описание заказа
+                        </div>
+                        <input type="text" placeholder="Необязательно">
+                        <div class="sub_input_info">
+                            Для поиска торговой точки достаточно ввести первые 3 буквы
+                        </div>
+                    </label>
+                    <div class="file_form">
+                        <label class="file_item flex column a_center">
+                            <input type="file" name="file" >
+                            <img src="./assets/images/upload_icon.svg" alt="">
+                            <div class="file_titles">
+                                <h2>Переместите файлы сюда или нажмите для загрузки</h2>
+                                <p>DOC, PDF, максимальный размер до 20 мбайт</p>
+                            </div>
+                        </label>
+                        <ul class="file_lists">
+                            <li><a href="" class="files_item flex between a_center">
+                                <div class="file_left flex a_center ">
+                                    <img src="./assets/images/load.svg" alt="">
+                                    <span>Filename.pdf</span>
+                                </div> 
+                                <div class="exit"><img src="assets/images/trash.svg" alt=""></div>
+                            </a></li>
+                            <li><a href="" class="files_item flex between a_center">
+                                <div class="file_left flex a_center ">
+                                    <img src="./assets/images/check.svg" alt="">
+                                    <span>Filename.pdf</span>
+                                </div> 
+                                <div class="exit"><img src="assets/images/trash.svg" alt=""></div>
+                            </a></li>
+                            <li><a href="" class="files_item flex between a_center">
+                                <div class="file_left flex a_center ">
+                                    <img src="./assets/images/check.svg" alt="">
+                                    <span>Filename.pdf</span>
+                                </div> 
+                                <div class="exit"><img src="assets/images/trash.svg" alt=""></div>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal_footer flex a_center ">
+                <button type="reset">Отменить</button>
+                <button type="submit">Создать заказ</button>
+            </div>
+        </form>
+    </div>
+    <!-- modal next  senary-->
+    <div class="modal" id="modal_products">
+        <form class="modal_content">
+            <div class="modal_header flex a_center between">
+                <h2 class="flex a_center"><span>Редактор изделий</span> <a href="" class="flex a_center"><img src="./assets/images/plus.svg" alt=""> <span>Добавить изделие</span></a></h2>
+                <span class="close_product_modal modal_exit">&times;</span>
+            </div>
+            <div class="modal_body flex column">
+                <!-- items 1 -->
+                 <div class="modal_body_top flex column">
+                    <div class="modal_imtes flex">
+                        <div class="modal_input flex column">
+                            <div class="input_title">
+                                Добавьте изделие
+                            </div>
+                            <select name="" id="">
+                                <option value="">Выберите изделия</option>
+                                <option value="">Выберите изделия</option>
+                                <option value="">Выберите изделия</option>
+                            </select>
+                        </div>
+                        <div class="modal_input flex column">
+                            <div class="input_title">
+                                Кол-во
+                            </div>
+                            <input type="number" value="1">
+                        </div>
+                    </div>
+                    <div class="modal_imtes flex">
+                        <div class="modal_input flex column">
+                            <div class="input_title">
+                                Назначить конструктора 
+                            </div>
+                            <select name="" id="">
+                                <option value="">Выберите конструктора из списка</option>
+                                <option value="">Выберите конструктора из списка2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal_btn flex a_center">
+                        <button type="reset">Отменить</button>
+                        <button type="submit">Добавить</button>
+                    </div>
+                 </div>
+                <!-- items 2 -->
+                 <div class="modal_body_bottom">
+                     <div class="modal_items flex column">
+                         <div class="info_list_content flex between wrap">
+                             <div class="info_item">
+                                 <div class="info_top flex between a_center  ">
+                                     <span>Изделие 1</span>
+                                     <img src="./assets/images/pen.svg" alt="">
+                                 </div>
+                                 <ul class="info_lists flex column">
+                                     <li class="flex a_center"><span>Вид изделия</span><span>Ножка</span></li>
+                                     <li class="flex a_center"><span>Количество</span><span>4</span></li>
+                                     <li class="flex a_center"><span>Конструктор</span><span>Иванов О.И</span></li>
+                                 </ul>
+                             </div>
+                             <div class="info_item">
+                                 <div class="info_top flex between a_center  ">
+                                     <span>Изделие 2</span>
+                                     <img src="./assets/images/pen.svg" alt="">
+                                 </div>
+                                 <ul class="info_lists flex column">
+                                     <li class="flex a_center"><span>Вид изделия</span><span>Ножка</span></li>
+                                     <li class="flex a_center"><span>Количество</span><span>4</span></li>
+                                     <li class="flex a_center"><span>Конструктор</span><span>Иванов О.И</span></li>
+                                 </ul>
+                             </div>
+                             <div class="info_item">
+                                 <div class="info_top flex between a_center  ">
+                                     <span>Изделие 3</span>
+                                     <img src="./assets/images/pen.svg" alt="">
+                                 </div>
+                                 <ul class="info_lists flex column">
+                                     <li class="flex a_center"><span>Вид изделия</span><span>Ножка</span></li>
+                                     <li class="flex a_center"><span>Количество</span><span>4</span></li>
+                                     <li class="flex a_center"><span>Конструктор</span><span>Иванов О.И</span></li>
+                                 </ul>
+                             </div>
+                             <div class="info_item">
+                                 <div class="info_top flex between a_center  ">
+                                     <span>Изделие 4</span>
+                                     <img src="./assets/images/pen.svg" alt="">
+                                 </div>
+                                 <ul class="info_lists flex column">
+                                     <li class="flex a_center"><span>Вид изделия</span><span>Ножка</span></li>
+                                     <li class="flex a_center"><span>Количество</span><span>4</span></li>
+                                     <li class="flex a_center"><span>Конструктор</span><span>Иванов О.И</span></li>
+                                 </ul>
+                             </div>
+                             <div class="info_item">
+                                 <div class="info_top flex between a_center  ">
+                                     <span>Изделие 5</span>
+                                     <img src="./assets/images/pen.svg" alt="">
+                                 </div>
+                                 <ul class="info_lists flex column">
+                                     <li class="flex a_center"><span>Вид изделия</span><span>Ножка</span></li>
+                                     <li class="flex a_center"><span>Количество</span><span>4</span></li>
+                                     <li class="flex a_center"><span>Конструктор</span><span>Иванов О.И</span></li>
+                                 </ul>
+                             </div>
+                             <div class="info_item">
+                                 <div class="info_top flex between a_center  ">
+                                     <span>Изделие 6</span>
+                                     <img src="./assets/images/pen.svg" alt="">
+                                 </div>
+                                 <ul class="info_lists flex column">
+                                     <li class="flex a_center"><span>Вид изделия</span><span>Ножка</span></li>
+                                     <li class="flex a_center"><span>Количество</span><span>4</span></li>
+                                     <li class="flex a_center"><span>Конструктор</span><span>Иванов О.И</span></li>
+                                 </ul>
+                             </div>
+                             <a href="" class="all_btn">Развернуть (+20)</a>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+            
+        </form>
+    </div>
+    <!-- delete -->
+    <div class="modal " id="delete_modal">
+        <form class="modal_content">
+            <div class="modal_header flex a_end end">
+                <span  class="exit_edit modal_exit">&times;</span>
+            </div>
+            <div class="modal_body flex column a_center">
+                <img src="./assets/images/delete_x.svg" alt="">
+                <div class="delete_text flex column a_center">
+                    <div class="delete_title">Подтвердите удаление выбранных элементов 3</div>
+                    <div class="delete_subtitle">Если вы удалите выбранные элементы, вернуть их будет невозможно</div>
+                </div>
+            </div>
+            <div class="modal_footer flex a_center a_center ">
+                <button type="reset">Отменить</button>
+                <button type="submit">Удалить</button>
+            </div>
+        </form>
+    </div>
+    <!-- status_modal -->
+    <div class="modal" id="status">
+        <form class="modal_content">
+            <div class="modal_header flex a_center between">
+                <div class="modal_title">
+                    <h2>Выбрать статус<span class="edit_title_sm">3 объекта</span></h2>
+                </div>
+                <div class="modal_btns_gorup flex a_center">
+                    <a href="" class="flex a_center center  trash_modal">
+                        <img src="./assets/images/trash_icon.svg" class="" alt="">
+                    </a>
+                    <span  class="exit_edit modal_exit">&times;</span>
+                </div>
+            </div>
+            <div class="modal_body flex column a_center">
+                <div class="status_options">
+                    <label class="status_option">
+                      <input type="radio" name="status" value="new" />
+                      
+                      <span class="status_circle new"></span>
+                      <span class="status_text">
+                        Отметить "как новые"
+                        <small>Если выбрать данный статус - заказы будут отмечены как новый, возможно этапы которые прошёл заказ буду сброшены</small>
+                      </span>
+                    </label>
+                  
+                    <label class="status_option">
+                      <input type="radio" name="status" value="in_work" />
+                      <span class="status_circle in_work"></span>
+                      <span class="status_text">
+                        Отметить как "в работе"
+                        <small>Статус заказа изменится на "в работе".</small>
+                      </span>
+                    </label>
+                  
+                    <label class="status_option">
+                      <input type="radio" name="status" value="paused" />
+                      <span class="status_circle paused"></span>
+                      <span class="status_text">
+                        Отметить как "приостановлено"
+                        <small>Если выбрать данный статус, то выбранные заказы будут приостановлены</small>
+                      </span>
+                    </label>
+                  
+                    <label class="status_option">
+                      <input type="radio" name="status" value="archived" />
+                      <span class="status_circle archived"></span>
+                      <span class="status_text">
+                        Отправить в архив
+                        <small>Выбранные заказы будут отправлены в архив, вернуть заказ из архива невозможно, история этапов заказов будут сохранены</small>
+                      </span>
+                    </label>
+                  </div>
+                  
+            </div>
+            <div class="modal_footer flex a_center a_center ">
+                <button type="reset">Отменить</button>
+                <button type="submit">Удалить</button>
+            </div>
+        </form>
+    </div>
+    <div class="toastfy flex a_center ">
+        <img src="assets/images/check_toast.svg" alt="">
+        <span>Заказ успешно создан</span>
+        <div class="toast_exit">&times;</div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

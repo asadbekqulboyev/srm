@@ -313,3 +313,17 @@ if(check_form2){
           target.classList.add('active');
       });
   });
+  // dashboard_accardion
+document.querySelectorAll('.dashboard_header').forEach(header => {
+  header.addEventListener('click', () => {
+      const dashboardChild = header.nextElementSibling; 
+      if (dashboardChild && dashboardChild.classList.contains('dashboard_child')) {
+          dashboardChild.classList.toggle('active'); 
+      }
+  });
+});
+document.querySelectorAll('.dashboard_child.child').forEach(child => {
+  child.addEventListener('click', () => {
+      child.classList.toggle('active'); 
+  });
+});

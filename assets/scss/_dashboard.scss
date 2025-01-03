@@ -1,8 +1,8 @@
 .dashboard {
-
+    overflow-x: auto;
+    width: 100%;
     .dashboard_items {
         min-width: 2000px;
-        overflow-x: auto;
         gap: 20px 0;
         .dashboard_item {
 

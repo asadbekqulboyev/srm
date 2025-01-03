@@ -16,7 +16,7 @@
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   background: rgba(0, 0, 0, 0.03);
   position: fixed;
-  z-index: 10;
+  z-index: 101;
 }
 .sidebar .logo {
   display: flex;
@@ -2419,6 +2419,9 @@
   background-color: #f1f1f1;
 }
 
+.works {
+  z-index: 10;
+}
 .works span.active {
   width: fit-content;
   padding: 0px 8px;
@@ -2440,9 +2443,12 @@
   width: auto !important;
 }
 
+.dashboard {
+  overflow-x: auto;
+  width: 100%;
+}
 .dashboard .dashboard_items {
   min-width: 2000px;
-  overflow-x: auto;
   gap: 20px 0;
 }
 .dashboard .dashboard_items .dashboard_item {

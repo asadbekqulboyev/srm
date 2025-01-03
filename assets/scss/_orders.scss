@@ -343,8 +343,6 @@
     display: inline-block;
     width: 120px;
 }
-
-
 .order_item_content_top {
     font-size: 12px;
     font-style: normal;
@@ -366,10 +364,81 @@
         color: rgba(0, 0, 0, 0.50);
     }
 }
-
 .order_title {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     margin-top: 6px;
+}
+.order2{
+    .modal_header{
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 232;
+        background: #fff;
+    }
+    .modal_content{
+        width: 100%;
+        .stage{
+            width: 50%;
+        }
+        .tables{
+            table {
+                border-collapse: collapse;
+                text-align: center;
+                thead th{
+                    text-align: left;
+                }
+                tbody tr{
+                    text-align: left;
+                    font-size: 16px;
+                    font-weight: 700;
+                    td:nth-child(3n){
+                        padding-left: 20px;
+                    }
+                }
+                th, td {
+                  border-right: 1px solid transparent;
+                  padding-top: 10px;
+                  padding-left: 10px;
+                }
+              
+                th {
+                  border-right: 0;
+                  font-weight: bold;
+                }
+              
+                td span.green {
+                  background-color: #bde6c7;
+                  color: #155724;
+                  margin-left: 20px;
+                }
+                td span.yellow {
+                  background-color: #fff3cd;
+                }
+              
+                td.red {
+                  background-color: #ff1024;
+                  color: #721c24;
+                }
+            
+                td div{
+                    width: fit-content;
+                    padding: 8px;
+                    background: rgba(46, 255, 245, 0.472);
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                tbody tr:nth-child(even) {
+                  background-color: #f9f9f9;
+                }
+              
+                tbody tr:hover {
+                  background-color: #f1f1f1;
+                }
+              }
+              
+        }
+    }
 }

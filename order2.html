@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <main class="order2">
+        <div class="modal show tabs" id="new_orders">
+            <form class="modal_content">
+                <div class="modal_header flex a_center between">
+                    <div class="modal_title">
+                        <h2>Заказ</h2>
+                    </div>
+                    <div class="modal_btns_gorup flex a_center">
+                        
+                        <a href="" class="flex a_center center">
+                            <img src="assets/images/modal_xsl.svg" alt="">
+                            <span>Выгрузить отчет</span>
+                        </a>
+                        <div>
+                            <a  href="#" class="modal_edit_btn flex a_center " >
+                            <img src="assets/images/pen_black.svg" alt="">
+                            <span>Редактировать</span>
+                         </a>
+                        </div>
+                        
+                        <a href="" class="flex a_center center  trash_modal">
+                            <img src="./assets/images/trash_icon.svg" class="" alt="">
+                        </a>
+                        <span  class="exit_edit modal_exit">&times;</span>
+                    </div>
+                </div>
+                <div class="modal_body flex column">
+                    <div class="modal_top">
+                        <div class="order_item_content_top flex a_center">
+                            <div class="active"></div>
+                            <div class="number"> №: 43178</div>
+                            <div class="dates"> 25.03.2024 - 25.03.2024</div>
+                        </div>
+                        <div class="order_title">Россия, Москва / Панорама / Том тейлор</div>
+                    </div>
+                    <div class="tab_btns">
+                       <div class="tabs">
+                        <div class="tab active" data-target="stage-1">Этапы</div>
+                        <div class="tab" data-target="stage-2">Информация о заказе</div>
+                        <div class="tab" data-target="stage-3">Изделия</div>
+                    </div> 
+                    </div>
+                    <!-- tab content -->
+                   <div class="content">
+                   <div id="stage-1" class="content-section active">
+                    <div class="stage">
+                <img src="./assets/images/check_blue.svg" alt="" class="check">
+                <div class="stage_item">
+                   <div class="stage_top">
+                    <div class="dates">25.03.2024 / 16:31 - 25.03.2024 / 16:31</div>
+                    <div class="stage_title">Цех 1</div>
+                </div>
+                <div class="stage_content flex between wrap">
+                    <div class="stage_content_info">
+                        <div class="stage_title">
+                            Константинополев А.И.
+                        </div>
+                        <div class="dates">
+                            Линейный рабочий
+                        </div>
+                    </div>
+                    <div class="stage_content_info">
+                        <div class="stage_title">
+                            Прием, Чертеж
+                        </div>
+                        <div class="dates">
+                            4 ножки  1 сидушка  1 спинка
+                        </div>
+                    </div>
+                    <div class="stage_content_info bottom">
+                        <div class="stage_sm_title">
+                            Комментарий:
+                        </div>
+                        <div class="stage_text">
+                            Закончил
+                        </div>
+                    </div>
+                </div>  
+                </div>
+                <div class="stage_item mt">
+                    <div class="stage_top">
+                     <div class="dates">25.03.2024 / 16:31 - 25.03.2024 / 16:31</div>
+                     <div class="stage_title">Цех 1</div>
+                 </div>
+                 <div class="stage_content flex between wrap">
+                     <div class="stage_content_info">
+                         <div class="stage_title">
+                             Константинополев А.И.
+                         </div>
+                         <div class="dates">
+                             Линейный рабочий
+                         </div>
+                     </div>
+                     <div class="stage_content_info">
+                         <div class="stage_title">
+                             Прием, Чертеж
+                         </div>
+                         <div class="dates">
+                             4 ножки  1 сидушка  1 спинка
+                         </div>
+                     </div>
+                     <div class="stage_content_info bottom">
+                         <div class="stage_sm_title">
+                             Комментарий:
+                         </div>
+                         <div class="stage_text">
+                             Закончил
+                         </div>
+                     </div>
+                 </div>  
+                 </div>
+                    </div>
+                    <div class="stage">
+                    <img src="./assets/images/check_blue.svg" alt="" class="check">
+                    <div class="stage_item">
+                       <div class="stage_top">
+                        <div class="dates">25.03.2024 / 16:31 - 25.03.2024 / 16:31</div>
+                        <div class="stage_title">Цех 1</div>
+                    </div>
+                    <div class="stage_content flex between wrap">
+                        <div class="stage_content_info">
+                            <div class="stage_title">
+                                Константинополев А.И.
+                            </div>
+                            <div class="dates">
+                                Линейный рабочий
+                            </div>
+                        </div>
+                        <div class="stage_content_info">
+                            <div class="stage_title">
+                                Прием, Чертеж
+                            </div>
+                            <div class="dates">
+                                4 ножки  1 сидушка  1 спинка
+                            </div>
+                        </div>
+                    </div>  
+                    </div>
+                    </div>
+                    <div class="stage">
+                    <img src="./assets/images/check_blue.svg" alt="" class="check">
+                    <div class="stage_item">
+                       <div class="stage_top">
+                        <div class="dates">25.03.2024 / 16:31 - 25.03.2024 / 16:31</div>
+                        <div class="stage_title">Цех 1</div>
+                    </div>
+                    <div class="stage_content flex between wrap">
+                        <div class="stage_content_info">
+                            <div class="stage_title">
+                                Константинополев А.И.
+                            </div>
+                            <div class="dates">
+                                Линейный рабочий
+                            </div>
+                        </div>
+                        <div class="stage_content_info">
+                            <div class="stage_title">
+                                Прием, Чертеж
+                            </div>
+                            <div class="dates">
+                                4 ножки  1 сидушка  1 спинка
+                            </div>
+                        </div>
+                    </div>  
+                    </div>
+                    </div>
+                    <div class="tables">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>123.1 Тумба</th>
+                                    <th>Форматник</th>
+                                    <th>ЧПУ</th>
+                                    <th>Кромочник</th>
+                                    <th>Форматник</th>
+                                    <th>ЧПУ</th>
+                                    <th>Кромочник</th>
+                                    <th>Форматник</th>
+                                    <th>ЧПУ</th>
+                                    <th>Кромочник</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12.12.2023</td>
+                                    <td> 
+                                    <div class="flex  column">
+                                       <span> 12.12.2023 17:00</span> 
+                                       <span>12.12.2023 17:00</span>
+                                    </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                        </div>  
+                                    </td>
+                                    <td >
+                                        <div class="flex column" style="background: rgba(255, 0, 0, 0.832);">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td >
+                                        <div class="flex column"  style="background: rgb(255, 221, 1);">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>123.1 Стол</td>
+                                    <td class="green"> 
+                                    <div class="flex  column">
+                                       <span> 12.12.2023 17:00</span> 
+                                       <span>12.12.2023 17:00</span>
+                                    </div>  
+                                    </td>
+                                    <td class="yellow">
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                        </div>  
+                                    </td>
+                                    <td >
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td >
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>123.1 Комод</td>
+                                    
+                                    <td class="green"> 
+                                        <div class="flex  column">
+                                           <span> 12.12.2023 17:00</span> 
+                                           <span>12.12.2023 17:00</span>
+                                        </div>  
+                                        </td>
+                                        <td class="yellow">
+                                            <div class="flex column">
+                                                <span> 12.12.2023 17:00</span> 
+                                                <span>12.12.2023 17:00</span>
+                                             </div>  
+                                        </td>
+                                        <td>
+                                            <div class="flex column">
+                                                <span> 12.12.2023 17:00</span> 
+                                                <span>12.12.2023 17:00</span>
+                                            </div>  
+                                        </td>
+                                        <td >
+                                            <div class="flex column">
+                                                <span> 12.12.2023 17:00</span> 
+                                                <span>12.12.2023 17:00</span>
+                                             </div>  
+                                        </td>
+                                        <td>
+                                            <div class="flex column">
+                                                <span> 12.12.2023 17:00</span> 
+                                                <span>12.12.2023 17:00</span>
+                                             </div>  
+                                        </td>
+                                        <td>
+                                            <div class="flex column">
+                                                <span> 12.12.2023 17:00</span> 
+                                                <span>12.12.2023 17:00</span>
+                                             </div>  
+                                        </td>
+                                        <td>
+                                            <div class="flex column">
+                                                <span> 12.12.2023 17:00</span> 
+                                                <span>12.12.2023 17:00</span>
+                                             </div>  
+                                        </td>
+                                        <td >
+                                            <div class="flex column">
+                                                <span> 12.12.2023 17:00</span> 
+                                                <span>12.12.2023 17:00</span>
+                                             </div>  
+                                        </td>
+                                        <td>
+                                            <div class="flex column">
+                                                <span> 12.12.2023 17:00</span> 
+                                                <span>12.12.2023 17:00</span>
+                                             </div>  
+                                        </td>
+                                        <td>
+                                            <div class="flex column">
+                                                <span> 12.12.2023 17:00</span> 
+                                                <span>12.12.2023 17:00</span>
+                                             </div>  
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td>123.1 Вешалка</td>
+                                    <td class="green"> 
+                                    <div class="flex  column">
+                                       <span> 12.12.2023 17:00</span> 
+                                       <span>12.12.2023 17:00</span>
+                                    </div>  
+                                    </td>
+                                    <td class="yellow">
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                        </div>  
+                                    </td>
+                                    <td >
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td >
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                    <td>
+                                        <div class="flex column">
+                                            <span> 12.12.2023 17:00</span> 
+                                            <span>12.12.2023 17:00</span>
+                                         </div>  
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="stage error">
+                    <img src="./assets/images/x_icon.svg" alt="" class="check">
+                    <div class="stage_item">
+                       <div class="stage_top">
+                        <div class="dates">25.03.2024 / 16:31 - 25.03.2024 / 16:31</div>
+                        <div class="stage_title">Цех 1</div>
+                    </div>
+                    <div class="stage_content flex between wrap">
+                        <div class="stage_content_info">
+                            <div class="stage_title">
+                                Константинополев А.И.
+                            </div>
+                            <div class="dates">
+                                Линейный рабочий
+                            </div>
+                        </div>
+                        <div class="stage_content_info">
+                            <div class="stage_title">
+                                Прием, Чертеж
+                            </div>
+                            <div class="dates">
+                                4 ножки  1 сидушка  1 спинка
+                            </div>
+                        </div>
+                    </div>  
+                    </div>
+                    </div>
+                   </div>
+                   <div id="stage-2" class="content-section">
+                    <div class="btn_items flex wrap between">
+                        <div class="btn_title">Прикрепленные пользователи</div>
+                        <div class="btn_item">
+                            <div class="btn_title">Коновалов А.И.</div>
+                            <div class="btn_title_sm">Руководители организации</div>
+                        </div>
+                        <div class="btn_item">
+                            <div class="btn_title">Иванов А.И.</div>
+                            <div class="btn_title_sm">Конструктор</div>
+                        </div>
+                        <div class="btn_item">
+                            <div class="btn_title">Константинополев А.И.</div>
+                            <div class="btn_title_sm">Линейный рабочий</div>
+                        </div>
+                        <div class="btn_item">
+                            <div class="btn_title">Рубцов И.И.</div>
+                            <div class="btn_title_sm">Мастер цеха</div>
+                        </div>
+                    </div>
+                    <div class="btn_items file_items flex wrap between">
+                        <div class="btn_title">Прикрепленные пользователи</div>
+                        <div class="file_items flex a_center">
+                            <div class="icon">
+                                <img src="./assets/images/files.svg" alt="">
+                                <span>jpeg</span>
+                            </div>
+                            <div class="file_info">
+                                <div class="file_name">file_name_goes_here</div>
+                                <span class="file_siz">165.7 KB</span>
+                            </div>
+                        </div>
+                        <div class="file_items flex a_center">
+                            <div class="icon">
+                                <img src="./assets/images/files.svg" alt="">
+                                <span>jpeg</span>
+                            </div>
+                            <div class="file_info">
+                                <div class="file_name">file_name_goes_here</div>
+                                <span class="file_siz">165.7 KB</span>
+                            </div>
+                        </div>
+                        <div class="file_items flex a_center">
+                            <div class="icon">
+                                <img src="./assets/images/files.svg" alt="">
+                                <span>jpeg</span>
+                            </div>
+                            <div class="file_info">
+                                <div class="file_name">file_name_goes_here</div>
+                                <span class="file_siz">165.7 KB</span>
+                            </div>
+                        </div>
+                        <div class="file_items flex a_center">
+                            <div class="icon">
+                                <img src="./assets/images/files.svg" alt="">
+                                <span>jpeg</span>
+                            </div>
+                            <div class="file_info">
+                                <div class="file_name">file_name_goes_here</div>
+                                <span class="file_siz">165.7 KB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_items file_items flex wrap between">
+                        <div class="btn_title">Комментарий</div>
+                         <div class="comment">Требует в сборке, дополнительные стяжки и окрашивание по желанию мастера</div>
+                    </div>
+                   </div>
+                   <div id="stage-3" class="content-section">
+                    <div class="action_lists flex wrap ">
+                        <div class="action_list_item">
+                            <div class="action_list_title">
+                                Изделие 1
+                            </div>
+                            <ul class="action_lists_items">
+                                <li><span>Вид изделия</span> <span>Ножка</span></li>
+                                <li><span>Количество</span> <span>4</span></li>
+                                <li><span>Конструктор</span> <span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <div class="action_list_item">
+                            <div class="action_list_title">
+                                Изделие 2
+                            </div>
+                            <ul class="action_lists_items">
+                                <li><span>Вид изделия</span> <span>Ножка</span></li>
+                                <li><span>Количество</span> <span>4</span></li>
+                                <li><span>Конструктор</span> <span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <div class="action_list_item">
+                            <div class="action_list_title">
+                                Изделие 3
+                            </div>
+                            <ul class="action_lists_items">
+                                <li><span>Вид изделия</span> <span>Ножка</span></li>
+                                <li><span>Количество</span> <span>4</span></li>
+                                <li><span>Конструктор</span> <span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <div class="action_list_item">
+                            <div class="action_list_title">
+                                Изделие 4
+                            </div>
+                            <ul class="action_lists_items">
+                                <li><span>Вид изделия</span> <span>Ножка</span></li>
+                                <li><span>Количество</span> <span>4</span></li>
+                                <li><span>Конструктор</span> <span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <div class="action_list_item">
+                            <div class="action_list_title">
+                                Изделие 5
+                            </div>
+                            <ul class="action_lists_items">
+                                <li><span>Вид изделия</span> <span>Ножка</span></li>
+                                <li><span>Количество</span> <span>4</span></li>
+                                <li><span>Конструктор</span> <span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <div class="action_list_item">
+                            <div class="action_list_title">
+                                Изделие 6
+                            </div>
+                            <ul class="action_lists_items">
+                                <li><span>Вид изделия</span> <span>Ножка</span></li>
+                                <li><span>Количество</span> <span>4</span></li>
+                                <li><span>Конструктор</span> <span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <div class="action_list_item">
+                            <div class="action_list_title">
+                                Изделие 7
+                            </div>
+                            <ul class="action_lists_items">
+                                <li><span>Вид изделия</span> <span>Ножка</span></li>
+                                <li><span>Количество</span> <span>4</span></li>
+                                <li><span>Конструктор</span> <span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                        <div class="action_list_item">
+                            <div class="action_list_title">
+                                Изделие 1
+                            </div>
+                            <ul class="action_lists_items">
+                                <li><span>Вид изделия</span> <span>Ножка</span></li>
+                                <li><span>Количество</span> <span>4</span></li>
+                                <li><span>Конструктор</span> <span>Иванов О.И</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                <div class="modal_footer flex a_center ">
+                    <button type="reset">Отменить</button>
+                    <button type="submit">Сохранить и закрыть</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

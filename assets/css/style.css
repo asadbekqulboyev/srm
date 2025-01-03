@@ -2356,6 +2356,69 @@
   margin-top: 6px;
 }
 
+.order2 .modal_header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 232;
+  background: #fff;
+}
+.order2 .modal_content {
+  width: 100%;
+}
+.order2 .modal_content .stage {
+  width: 50%;
+}
+.order2 .modal_content .tables table {
+  border-collapse: collapse;
+  text-align: center;
+}
+.order2 .modal_content .tables table thead th {
+  text-align: left;
+}
+.order2 .modal_content .tables table tbody tr {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+}
+.order2 .modal_content .tables table tbody tr td:nth-child(3n) {
+  padding-left: 20px;
+}
+.order2 .modal_content .tables table th, .order2 .modal_content .tables table td {
+  border-right: 1px solid transparent;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.order2 .modal_content .tables table th {
+  border-right: 0;
+  font-weight: bold;
+}
+.order2 .modal_content .tables table td span.green {
+  background-color: #bde6c7;
+  color: #155724;
+  margin-left: 20px;
+}
+.order2 .modal_content .tables table td span.yellow {
+  background-color: #fff3cd;
+}
+.order2 .modal_content .tables table td.red {
+  background-color: #ff1024;
+  color: #721c24;
+}
+.order2 .modal_content .tables table td div {
+  width: fit-content;
+  padding: 8px;
+  background: rgba(46, 255, 245, 0.472);
+  font-size: 12px;
+  font-weight: 400;
+}
+.order2 .modal_content .tables table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.order2 .modal_content .tables table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
 .works span.active {
   width: fit-content;
   padding: 0px 8px;

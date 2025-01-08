@@ -197,20 +197,21 @@
 }
 .projects .filter_items.active {
   padding: 8px 16px;
-  overflow: auto;
+  overflow: visible;
   height: max-content;
 }
-.projects .filter_items ul {
+.projects .filter_items ul.filter_items_lists:not(.sub_items) {
   gap: 16px;
 }
-.projects .filter_items li {
+.projects .filter_items ul.filter_items_lists:not(.sub_items) li {
   list-style: none;
+  position: relative;
 }
-.projects .filter_items li:nth-child(1) a {
+.projects .filter_items ul.filter_items_lists:not(.sub_items) li:nth-child(1) a {
   background: #EF4444;
   color: #fff;
 }
-.projects .filter_items li a {
+.projects .filter_items ul.filter_items_lists:not(.sub_items) li a {
   text-decoration: none;
   font-size: 14px;
   font-style: normal;
@@ -223,13 +224,60 @@
   padding: 4px 8px;
   gap: 6px;
 }
-.projects .filter_items li:last-child a {
+.projects .filter_items ul.filter_items_lists:not(.sub_items) li:last-child a {
   font-weight: 400;
   color: #2563EB;
   padding: 4px 8px;
   width: fit-content;
   padding: 0;
   border: 0;
+}
+.projects .filter_items ul.filter_items_lists:not(.sub_items) .sub_items {
+  position: absolute;
+  border-radius: 6px;
+  width: 100%;
+  border: 1px solid transparent;
+  overflow: hidden;
+  height: 0;
+  background: #FFF;
+  top: 33px;
+  transition: all 0.2s linear;
+}
+.projects .filter_items ul.filter_items_lists:not(.sub_items) .sub_items.show {
+  height: max-content;
+  border-color: #E6E6E6;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.projects .filter_items ul.filter_items_lists:not(.sub_items) .sub_items li {
+  width: 100%;
+}
+.projects .filter_items ul.filter_items_lists:not(.sub_items) .sub_items li:last-child {
+  width: 100%;
+}
+.projects .filter_items ul.filter_items_lists:not(.sub_items) .sub_items li:last-child a {
+  padding: 4px 8px;
+  width: 100%;
+}
+.projects .filter_items ul.filter_items_lists:not(.sub_items) .sub_items a {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background: #fff !important;
+  border: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600 !important;
+  color: #000 !important;
+  width: 100%;
+}
+.projects .filter_items ul.filter_items_lists:not(.sub_items) .sub_items a:hover {
+  background: #F4F5F5 !important;
+}
+.projects .filter_items ul.filter_items_lists:not(.sub_items) .sub_items a .icon {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #14B8A6;
 }
 .projects .actions {
   margin-bottom: 28px;
@@ -719,13 +767,15 @@
   gap: 6px;
   border-radius: 16px;
 }
+.modal .modal_content .modal_body .modal_items .modal_items_lists li span.not_flex {
+  display: inline-block;
+}
 .modal .modal_content .modal_body .modal_items .modal_items_lists li span.active {
   width: fit-content;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 2px 8px;
 }
 .modal .modal_content .modal_body .modal_items .modal_items_lists li span.active .status {
-  content: "";
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1201,7 +1251,10 @@
 .login #loading {
   display: none;
 }
-
+.login .dds__loading-indicator__spinner {
+  width: 88px;
+  height: 88px;
+}
 .logistic_header {
   width: 100%;
   padding: 16px 26px 16px 16px;
@@ -2786,6 +2839,7 @@
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
   padding: 5px;
   width: fit-content;
+  font-weight: 500;
   margin-top: 8px;
 }
 .jobs_wrapper .main .menu_jobs .menu_jobs a {

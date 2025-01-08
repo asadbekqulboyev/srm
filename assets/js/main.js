@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
             login_load.style.display = 'none';
           }
           form.submit(); 
-        }, 2000);
+        }, 12000);
       }
     });
   }
@@ -187,7 +187,9 @@ if(document.querySelector('.filter')){
   if(status_btn){
     status_btn.onclick= function(e){
       e.preventDefault()
-      status_modal.classList.add('show')
+      // status_modal.classList.add('show')
+      this.nextElementSibling.classList.add('show')
+      
     }
   }
   // all modal close
@@ -248,8 +250,6 @@ check_form3 = document.querySelector('#check_form3')
 check = document.querySelector('#check')
 alink = document.querySelectorAll('.check_form_table a')
 alink2 = document.querySelectorAll('.check_form3 a')
-
-
 if(check){
   check.onclick = function(e) {
     e.preventDefault()
@@ -280,7 +280,6 @@ if(check_form3){
 alink.forEach(function(links){
   console.log(links)
 if(check_form2){
-
     links.onclick = function(e){
       e.preventDefault()
       links.classList.remove('active_yellow')

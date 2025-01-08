@@ -336,14 +336,15 @@
                             display: flex;
                             gap: 6px;
                             border-radius: 16px;
-
+                            &.not_flex{
+                                display: inline-block;
+                            }
                             &.active {
                                 width: fit-content;
                                 border: 1px solid rgba(0, 0, 0, 0.10);
                                 padding: 2px 8px;
 
                                 .status {
-                                    content: '';
                                     width: 8px;
                                     height: 8px;
                                     border-radius: 50%;
